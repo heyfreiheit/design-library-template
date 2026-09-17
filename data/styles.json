@@ -1,0 +1,588 @@
+{
+  "description": "Referenzstile: die gängigen ästhetischen Familien des modernen Webs. Hier findest du Vokabular für Gestaltungen, die deine eigene Sammlung noch nicht abdeckt. Ein präziser Stilname im Briefing bündelt zahlreiche Designentscheidungen.",
+  "styles": [
+    {
+      "id": "editorial-minimalism",
+      "name": "Editorial Minimalism",
+      "recognize": [
+        "ruhige neutrale Hintergründe und nahezu schwarze Schrift",
+        "eng laufende serifenlose Schrift in mittleren Strichstärken",
+        "großzügiger Weißraum",
+        "ein gedämpfter, sparsam eingesetzter Akzent"
+      ],
+      "vocabulary": [
+        "Zurückhaltung",
+        "enge Buchstabenabstände",
+        "ruhiges Selbstbewusstsein",
+        "Tastaturbedienung im Mittelpunkt",
+        "gedämpfter Akzent",
+        "kleine Schrift zulässig"
+      ],
+      "canonical": [
+        {
+          "name": "linear.app",
+          "url": "https://linear.app"
+        },
+        {
+          "name": "stripe.com",
+          "url": "https://stripe.com"
+        },
+        {
+          "name": "vercel.com",
+          "url": "https://vercel.com"
+        }
+      ],
+      "deployFor": "Entwicklungswerkzeuge, SaaS für Unternehmen und Menschen, die Marketingversprechen misstrauen.",
+      "imageStyle": "Eine minimale Produktansicht schwebt auf ruhigem, fast weißem Hintergrund, ein einzelner weicher Schatten, keine Szene und keine Dekoration.",
+      "risk": "Verkleinere die Überschrift stärker, als zunächst angemessen erscheint, und lasse den Weißraum die Seite tragen."
+    },
+    {
+      "id": "warm-editorial",
+      "name": "Warm Editorial",
+      "recognize": [
+        "Farbpalette aus Creme, Ton und Terrakotta",
+        "Serifenschrift auch im Fließtext, nicht nur in Überschriften",
+        "weiche abgerundete Schaltflächen",
+        "menschlich wirkende Illustration oder keine Bilder"
+      ],
+      "vocabulary": [
+        "warmes Papier",
+        "humanistische Serifenschrift",
+        "tonfarbener Akzent",
+        "belesene Anmutung",
+        "gemächliches Tempo"
+      ],
+      "canonical": [
+        {
+          "name": "anthropic.com",
+          "url": "https://www.anthropic.com"
+        },
+        {
+          "name": "notion.com",
+          "url": "https://www.notion.com"
+        },
+        {
+          "name": "are.na",
+          "url": "https://www.are.na"
+        }
+      ],
+      "deployFor": "Wissenswerkzeuge, Leseprodukte und Marken, denen Tiefe wichtiger ist als Geschwindigkeit.",
+      "imageStyle": "[MOTIV] als warme reduzierte Illustration auf cremefarbenem Papier, Terrakotta- und Tontöne, weiche Kanten, Komposition wie eine Buchillustration.",
+      "risk": "Setze den gesamten Fließtext in Serifenschrift, nicht nur die Überschriften.",
+      "warning": "Creme, Serifenschrift und Terrakotta sind inzwischen eine typische KI-Standardkombination: eine berechtigte Stilfamilie, aber ein problematischer Automatismus."
+    },
+    {
+      "id": "terminal-core",
+      "name": "Terminal-Core",
+      "recognize": [
+        "Festbreitenschrift als prägender Ausdruck",
+        "Phosphorgrün oder Bernstein auf nahezu Schwarz",
+        "Befehlszeilenmotive wie Eingabeaufforderungen, Optionen und Protokolle",
+        "bewusst hohe Informationsdichte"
+      ],
+      "vocabulary": [
+        "Festbreitenschrift",
+        "Phosphorleuchten",
+        "Befehlszeilenmetapher",
+        "zweckorientiert",
+        "hohe Dichte",
+        "Rhythmus von Protokollzeilen"
+      ],
+      "canonical": [
+        {
+          "name": "warp.dev",
+          "url": "https://www.warp.dev"
+        },
+        {
+          "name": "raycast.com",
+          "url": "https://www.raycast.com"
+        },
+        {
+          "name": "ollama.com",
+          "url": "https://ollama.com"
+        }
+      ],
+      "deployFor": "Entwicklungswerkzeuge und Infrastruktur für Menschen, die ständig im Terminal arbeiten.",
+      "imageStyle": "[MOTIV] als leuchtend phosphorgrüne ASCII-Kunst auf einem nahezu schwarzen Terminalbildschirm, dezente Bildzeilen, Leuchten eines Röhrenbildschirms.",
+      "risk": "Gestalte den Einstiegsbereich als tatsächliche laufende Terminalsitzung mit automatisch erscheinenden Eingaben."
+    },
+    {
+      "id": "swiss-international",
+      "name": "Swiss / International",
+      "recognize": [
+        "mathematisches Raster mit sichtbarer Logik",
+        "riesige linksbündige serifenlose Neo-Grotesk",
+        "Schwarz-Weiß mit einem einzigen reinen Rot",
+        "asymmetrisches Gleichgewicht ohne Dekoration"
+      ],
+      "vocabulary": [
+        "Rasterlogik",
+        "Neo-Grotesk",
+        "Linksbündigkeit",
+        "Asymmetrie",
+        "Sachlichkeit",
+        "ein einzelner roter Akzent"
+      ],
+      "canonical": [
+        {
+          "name": "grillitype.com",
+          "url": "https://www.grillitype.com"
+        },
+        {
+          "name": "Helvetica-Tradition",
+          "url": "https://www.helveticanow.com"
+        }
+      ],
+      "deployFor": "Portfolios, Schriftanbieter und Institutionen, bei denen Klarheit das Produkt ist.",
+      "imageStyle": "Flache geometrische Komposition: schwarze Balken und ein rotes Quadrat auf Weiß, mathematische Rasterausrichtung, keine Textur und keine Tiefe.",
+      "risk": "Eine Schriftfamilie, drei Strichstärken, ein rotes Quadrat – sonst nichts."
+    },
+    {
+      "id": "brutalist-raw",
+      "name": "Brutalist (Raw Web)",
+      "recognize": [
+        "System-Serifenschriften und unterstrichene blaue Links",
+        "sichtbare Rahmen, Tabellen und Trennlinien",
+        "kein Rastersystem und keine Bildwelt",
+        "Geschwindigkeit und Ehrlichkeit als Stärke"
+      ],
+      "vocabulary": [
+        "unverarbeitetes HTML",
+        "Standardformatierung",
+        "Anti-Design",
+        "sichtbare Struktur",
+        "Text im Mittelpunkt"
+      ],
+      "canonical": [
+        {
+          "name": "craigslist.org",
+          "url": "https://www.craigslist.org"
+        },
+        {
+          "name": "danluu.com",
+          "url": "https://danluu.com"
+        }
+      ],
+      "deployFor": "Persönliche Websites, Technikblogs und ironisch inszenierter Luxus.",
+      "imageStyle": null,
+      "risk": "Verwende Times New Roman in der Standardeinstellung und lasse den Inhalt die einzige Gestaltung sein."
+    },
+    {
+      "id": "neo-brutalism",
+      "name": "Neo-Brutalism",
+      "recognize": [
+        "dicke schwarze Konturen um alle Elemente",
+        "harte versetzte Schatten ohne Unschärfe",
+        "gesättigte flächige Farben wie Gelb, Rosa und Limette",
+        "kräftige Schrift und selbstbewusste Schaltflächen"
+      ],
+      "vocabulary": [
+        "harter Schatten",
+        "3-Pixel-Kontur",
+        "laute flächige Farben",
+        "kräftige Formen",
+        "zeichentrickartige Bewegung"
+      ],
+      "canonical": [
+        {
+          "name": "gumroad.com",
+          "url": "https://gumroad.com"
+        },
+        {
+          "name": "figma.com",
+          "url": "https://www.figma.com"
+        },
+        {
+          "name": "poolsuite.net",
+          "url": "https://poolsuite.net"
+        }
+      ],
+      "deployFor": "Werkzeuge für Kreative und unabhängige Produkte mit freundlicher Energie ohne glattpolierten Firmenauftritt.",
+      "imageStyle": "[MOTIV] als flache aufkleberartige Illustration mit dicken schwarzen Konturen, gesättigten Farbflächen, hartem versetztem Schatten und weißem oder kräftig einfarbigem Hintergrund.",
+      "risk": "Gib jedem Element einen harten, um 8 Pixel versetzten Schatten und verzichte auf abgerundete Ecken."
+    },
+    {
+      "id": "neon-brutalist",
+      "name": "Neon Brutalist / Editorial Chaos",
+      "recognize": [
+        "ein einzelner gesättigter Farbton auf Schwarz-Weiß",
+        "bewusst gegensätzliche Schriftarten",
+        "harte Kanten und aggressive Bildausschnitte",
+        "Magazin-Selbstverlagsästhetik und redaktionelle Dichte"
+      ],
+      "vocabulary": [
+        "Schriftkontrast",
+        "ein einzelner schriller Farbton",
+        "Energie eines selbstgemachten Magazins",
+        "aggressiver Anschnitt",
+        "kontrollierte Hässlichkeit"
+      ],
+      "canonical": [
+        {
+          "name": "theverge.com",
+          "url": "https://www.theverge.com"
+        },
+        {
+          "name": "pitchfork.com",
+          "url": "https://pitchfork.com"
+        }
+      ],
+      "deployFor": "Medienmarken, Kulturprodukte und ein Publikum mit Interesse an begleitenden Hintergrundtexten.",
+      "imageStyle": "Foto von [MOTIV] mit harter Zweifarbbehandlung in Magenta und Schwarz, aggressiver Ausschnitt, Halbtonkörnung, Anmutung eines fotokopierten selbstgemachten Magazins.",
+      "risk": "Kombiniere eine schmal laufende Grotesk in Großbuchstaben mit kursiver Serifenschrift innerhalb derselben Überschrift."
+    },
+    {
+      "id": "data-dense-pro",
+      "name": "Data-Dense Pro",
+      "recognize": [
+        "dunkle Oberfläche mit engen Abständen",
+        "gleich breite Tabellenziffern und Festbreitenschrift für Daten",
+        "Diagramme als zentrale Markenelemente",
+        "bedeutungstragende Statusfarben"
+      ],
+      "vocabulary": [
+        "gleich breite Tabellenziffern",
+        "Diagramm als Hauptmotiv",
+        "enge Abstände",
+        "inhaltlich begründete Statusfarben",
+        "Informationsdichte"
+      ],
+      "canonical": [
+        {
+          "name": "clickhouse.com",
+          "url": "https://clickhouse.com"
+        },
+        {
+          "name": "posthog.com",
+          "url": "https://posthog.com"
+        },
+        {
+          "name": "sentry.io",
+          "url": "https://sentry.io"
+        }
+      ],
+      "deployFor": "Analyse, Systemüberwachung und Finanztechnologie: Dichte vermittelt Kompetenz.",
+      "imageStyle": "Dichte dunkle Übersichtsoberfläche mit leuchtenden kleinen Verlaufsdiagrammen, bernsteinfarbenen und grünen Statusfarben, tabellarischen Datenrastern und dunkel blaugrauen Flächen.",
+      "risk": "Mache ein Live-Diagramm zum Hauptmotiv: echte Daten statt einer Illustration."
+    },
+    {
+      "id": "cinematic-dark",
+      "name": "Cinematic Dark",
+      "recognize": [
+        "nahezu schwarzer Hintergrund mit atmosphärischen Verläufen",
+        "übergroße Schrift mit sehr dünnen Strichen",
+        "dezent gesperrte Großbuchstaben",
+        "durch Scrollen ausgelöste Enthüllungen mit viel Bild- und Videomaterial"
+      ],
+      "vocabulary": [
+        "übergroße dünne Schrift",
+        "Atmosphäre",
+        "Inszenierung beim Scrollen",
+        "gesperrte Großbuchstaben",
+        "abgedunkelte Bildränder"
+      ],
+      "canonical": [
+        {
+          "name": "runwayml.com",
+          "url": "https://runwayml.com"
+        },
+        {
+          "name": "nvidia.com",
+          "url": "https://www.nvidia.com"
+        },
+        {
+          "name": "ferrari.com",
+          "url": "https://www.ferrari.com"
+        }
+      ],
+      "deployFor": "Produkteinführungen, Hardware sowie KI- und Kreativwerkzeuge: Begehrlichkeit vor technischen Daten.",
+      "imageStyle": "[MOTIV] taucht aus nahezu schwarzer Dunkelheit auf, ein einzelnes dramatisches Kantenlicht, atmosphärischer Dunst, filmischer Kontrast, Anmutung eines breiten 2,35:1-Filmformats.",
+      "risk": "Verwende große Schrift mit Strichstärke 100, einer Größe von 8 rem und einem Buchstabenabstand von 0,3 em."
+    },
+    {
+      "id": "glass-soft-futurism",
+      "name": "Glass / Soft-Futurism",
+      "recognize": [
+        "unscharfer Hintergrund und durchscheinende Flächen",
+        "Atmosphäre aus pastellfarbenen Verläufen",
+        "große Eckradien und geschichtete weiche Schatten",
+        "geometrische serifenlose Schrift mit Anklängen an SF"
+      ],
+      "vocabulary": [
+        "milchglasartige Unschärfe",
+        "Transparenz",
+        "weiche Tiefe",
+        "Pastellatmosphäre",
+        "warme Rundungen"
+      ],
+      "canonical": [
+        {
+          "name": "apple.com",
+          "url": "https://www.apple.com"
+        },
+        {
+          "name": "arc.net",
+          "url": "https://arc.net"
+        }
+      ],
+      "deployFor": "Verbraucheranwendungen und betriebssystemnahe Produkte mit hochwertiger Wirkung für ein breites Publikum.",
+      "imageStyle": "[MOTIV] hinter Milchglasflächen, sanfte Pastellverlaufsatmosphäre in Blau, Flieder und Pfirsich, durchscheinende gestaffelte Tiefe, sanftes Studiolicht.",
+      "risk": "Staple drei durchscheinende Ebenen und lasse Inhalte unscharf hindurchscheinen."
+    },
+    {
+      "id": "playful-color",
+      "name": "Playful Color / Illustrated",
+      "recognize": [
+        "mehrfarbige Palette mit hoher Sättigung",
+        "Illustrationen und Maskottchen als Hauptelemente",
+        "vollständig abgerundete Schaltflächen und federnde Bewegung",
+        "keine scharfen Ecken"
+      ],
+      "vocabulary": [
+        "gesättigte Farben",
+        "Maskottchen im Mittelpunkt",
+        "federnde Bewegung",
+        "vollständig abgerundete Formen",
+        "Konfetti als Erfolgsmoment"
+      ],
+      "canonical": [
+        {
+          "name": "duolingo.com",
+          "url": "https://www.duolingo.com"
+        },
+        {
+          "name": "canva.com",
+          "url": "https://www.canva.com"
+        },
+        {
+          "name": "headspace.com",
+          "url": "https://www.headspace.com"
+        }
+      ],
+      "deployFor": "Lern- und Wohlfühlangebote für Verbraucher – überall dort, wo Unsicherheit abgebaut werden soll.",
+      "imageStyle": "[MOTIV] als freundliche flache Illustration mit runden Formen, hoch gesättigter Farbpalette auf Weiß, dezenter Tiefe wie bei Papierschnitten und fröhlicher Figurenwirkung.",
+      "risk": "Gib dem Produkt ein Maskottchen und lasse es auf Handlungen der Nutzer reagieren."
+    },
+    {
+      "id": "y2k-retro-futurism",
+      "name": "Y2K / Retro-Futurism",
+      "recognize": [
+        "Schrift in Chrom- und Flüssigmetalloptik",
+        "Aqua- oder Cyanleuchten und Bildzeilen",
+        "Drahtgitterhorizonte, Kugeln und Sterne",
+        "die Zukunft aus der Vorstellung von 1999"
+      ],
+      "vocabulary": [
+        "Chromschrift",
+        "Bildzeilen",
+        "Aqualeuchten",
+        "Drahtgitterhorizont",
+        "flüssiges Metall",
+        "CD-ROM-Nostalgie"
+      ],
+      "canonical": [
+        {
+          "name": "poolsuite.net",
+          "url": "https://poolsuite.net"
+        },
+        {
+          "name": "y2k.institute",
+          "url": "https://www.cameronsworld.net"
+        }
+      ],
+      "deployFor": "Musik, Kulturveröffentlichungen und spielerische Entwicklungswerkzeuge für ein ironieaffines Publikum.",
+      "imageStyle": "[MOTIV] als flüssig-metallische verchromte 3D-Darstellung auf Schwarz, aqua- und magentafarbenes Kantenleuchten, dezente Bildzeilen, Drahtgitterhorizont im Hintergrund, optimistische Computerbildästhetik von 1999.",
+      "risk": "Setze das Logo tatsächlich in Schrift mit Chromverlauf und einer Blendenreflexion – mit voller Überzeugung."
+    },
+    {
+      "id": "japanese-minimalism",
+      "name": "Japanese Minimalism (Ma)",
+      "recognize": [
+        "Freiraum als Gestaltungsmaterial",
+        "asymmetrisch platziertes Einzelobjekt",
+        "warme gebrochene Weißtöne und neutrale Tuschefarben",
+        "ein kleiner roter Moment"
+      ],
+      "vocabulary": [
+        "Ma beziehungsweise Freiraum",
+        "Asymmetrie",
+        "Tusche auf Washi-Papier",
+        "ein einzelner roter Akzent",
+        "Stille als Luxus",
+        "vertikaler Rhythmus"
+      ],
+      "canonical": [
+        {
+          "name": "muji.com",
+          "url": "https://www.muji.com"
+        },
+        {
+          "name": "Kenya-Hara-Tradition",
+          "url": "https://www.ndc.co.jp/hara/en/"
+        }
+      ],
+      "deployFor": "Handwerksmarken, hochwertige Werkzeuge und Angebote, die Ruhe und bewusste Gestaltung vermitteln.",
+      "imageStyle": "Ein einzelnes kleines [MOTIV] unten rechts auf einer weiten warmen gebrochen weißen Fläche, weicher natürlicher Schatten, 80 Prozent Freiraum, ein winziger roter Siegelakzent, kaum sichtbare Washi-Papiertextur.",
+      "risk": "Lasse 85 Prozent des sichtbaren Bereichs leer und platziere das Produkt am Teilungspunkt des goldenen Schnitts."
+    },
+    {
+      "id": "quiet-luxury",
+      "name": "Quiet Luxury",
+      "recognize": [
+        "leichte Serifenschrift mit weiten Buchstabenabständen",
+        "Farbpalette aus Elfenbein, Graubraun und Knochenweiß",
+        "überall kleine Großbuchstaben als Beschriftungen",
+        "Produktfotografie als Stillleben"
+      ],
+      "vocabulary": [
+        "weit gesperrte Serifenschrift",
+        "Elfenbein und Graubraun",
+        "Stilllebenfotografie",
+        "Beschriftungen in Kapitälchen",
+        "apothekenartige Zurückhaltung",
+        "keine Ausrufezeichen"
+      ],
+      "canonical": [
+        {
+          "name": "aesop.com",
+          "url": "https://www.aesop.com"
+        },
+        {
+          "name": "therow.com",
+          "url": "https://www.therow.com"
+        }
+      ],
+      "deployFor": "Hochwertiger Direktvertrieb, Mode, Hautpflege und hochpreisige Dienstleistungen: Der Preis steht nie an erster Stelle.",
+      "imageStyle": "[MOTIV] als gedämpfte Stilllebenfotografie vor nahtlosem elfenbeinfarbenem Hintergrund, weiches Licht eines Nordfensters, graubraune Schatten, ruhige Apothekenanmutung, außer einem natürlichen Element keine Requisiten.",
+      "risk": "Lasse die gesamte Seite flüstern: leichte Serifenschrift, großzügige Buchstabenabstände und kein Wort lauter als das Produkt."
+    },
+    {
+      "id": "tactile-skeuomorph",
+      "name": "Tactile / Skeuomorph Revival",
+      "recognize": [
+        "echte Materialien wie Aluminium, Gummi und Papier",
+        "Drehknöpfe, Skalen und Schalter als Bedienelemente",
+        "innenliegende Schatten und präzise bearbeitete Kanten",
+        "Typografie wie in einer Geräteanleitung"
+      ],
+      "vocabulary": [
+        "gefrästes Aluminium",
+        "physische Bedienelemente",
+        "innenliegender Schatten",
+        "Gummitaste",
+        "Geräteanleitung",
+        "orangefarbener Sicherheitsakzent"
+      ],
+      "canonical": [
+        {
+          "name": "teenage.engineering",
+          "url": "https://teenage.engineering"
+        },
+        {
+          "name": "panic.com",
+          "url": "https://panic.com"
+        }
+      ],
+      "deployFor": "Hardware, Audioprodukte und Entwicklungswerkzeuge mit physischem Charakter – Produkte, die man anfassen möchte.",
+      "imageStyle": "[MOTIV] als präzise Produktdarstellung aus gefrästem Aluminium und Gummi, sichtbare Drehknöpfe und Schalter, weiches Studiolicht, cremefarbener Hintergrund, orangefarbenes Akzentdetail, Qualität eines Industriedesignkatalogs.",
+      "risk": "Lasse jede Schaltfläche drückbar wirken: echte Tiefe, echte Materialien und keine flachen Elemente."
+    },
+    {
+      "id": "immersive-3d",
+      "name": "Immersive 3D / WebGL Scroll",
+      "recognize": [
+        "die 3D-Szene selbst bildet die Seite",
+        "Scrollen bewegt die Kamera statt das Layout",
+        "Ladeanzeige als erster Eindruck",
+        "Schrift schwebt innerhalb der Welt"
+      ],
+      "vocabulary": [
+        "durch Scrollen gesteuerte Kamera",
+        "zentrales 3D-Modell",
+        "räumliche Lichtstrahlen",
+        "inszenierter Lademoment",
+        "Schrift innerhalb der Welt",
+        "nachträglich hinzugefügte Körnung"
+      ],
+      "canonical": [
+        {
+          "name": "lusion.co",
+          "url": "https://lusion.co"
+        },
+        {
+          "name": "activetheory.net",
+          "url": "https://activetheory.net"
+        }
+      ],
+      "deployFor": "Produkteinführungen, Agenturen und preisorientierte Projekte, bei denen die Website selbst handwerkliches Können beweisen soll.",
+      "imageStyle": "[MOTIV] als einzelnes leuchtendes 3D-Hauptobjekt in einer dunklen räumlichen Szene, filmischer Dunst, Bodenreflexion, nachträgliche Filmkörnung, ein kühles Hauptlicht; für eine Umsetzung als WebGL-Einstiegsbereich komponieren.",
+      "risk": "Ein ununterbrochener Kameraflug ohne Schnitte: Die ganze Geschichte in einem einzigen Scrollablauf."
+    },
+    {
+      "id": "bento-grid",
+      "name": "Bento Grid",
+      "recognize": [
+        "Produktfunktionen werden in Kacheln erzählt",
+        "verschiedene Kachelgrößen mit einer Hauptkachel",
+        "jede Kachel als eigenständige Demonstration",
+        "großzügige Zwischenräume und weiche Eckradien"
+      ],
+      "vocabulary": [
+        "Bento-Kacheln",
+        "Hauptkachel",
+        "unterschiedliche Rasterbreiten",
+        "Kachel als Demonstration",
+        "Raster mit weichen Eckradien",
+        "klare Kachelhierarchie"
+      ],
+      "canonical": [
+        {
+          "name": "apple.com Veranstaltungen",
+          "url": "https://www.apple.com"
+        },
+        {
+          "name": "linear.app Funktionen",
+          "url": "https://linear.app"
+        }
+      ],
+      "deployFor": "Funktionsreiche Produkte, die sich schnell erfassbar erklären lassen müssen – ein gehaltvoller Ersatz für Symbolraster.",
+      "imageStyle": "Collage aus Produktfunktionen als Bento-Raster: unterschiedlich große abgerundete Kacheln auf neutralem Hintergrund, jede Kachel mit einem echten Oberflächendetail oder einer Kennzahl, eine große Hauptkachel, einheitliche innere Schatten und Abstände.",
+      "risk": "Mache jede Kachel zu einer tatsächlich funktionierenden Demonstration statt zu einem Screenshot: Das Raster dient als Beleg.",
+      "warning": "Wird selbst zunehmend zum Standardmuster: mit echten Inhalten umsetzen oder darauf verzichten."
+    },
+    {
+      "id": "magazine-print",
+      "name": "Magazine / Print DNA",
+      "recognize": [
+        "Zeitungskopf, Spalten und Spaltentrennlinien",
+        "Initialen und herausgestellte Zitate",
+        "Serifen-Fließtext im Blocksatz",
+        "Ausgaben, Editionen und Seitenzahlen"
+      ],
+      "vocabulary": [
+        "Zeitungskopf",
+        "Initiale",
+        "herausgestelltes Zitat",
+        "Spaltenrhythmus",
+        "Autorität gedruckter Medien"
+      ],
+      "canonical": [
+        {
+          "name": "nytimes.com Beiträge",
+          "url": "https://www.nytimes.com"
+        },
+        {
+          "name": "a24films.com",
+          "url": "https://a24films.com"
+        },
+        {
+          "name": "criterion.com",
+          "url": "https://www.criterion.com"
+        }
+      ],
+      "deployFor": "Lange Texte, Newsletter und Kulturmarken: Die Worte sind das Produkt.",
+      "imageStyle": "[MOTIV] als historische redaktionelle Fotografie, gedämpfte Druckwiedergabe, leichte Textur von Druckfarbe auf Zeitungspapier, für ein dreispaltiges großformatiges Zeitungslayout komponiert.",
+      "risk": "Beginne die Seite mit einem vollständigen Zeitungskopf und einer Initiale wie in einer Sonntagsausgabe."
+    }
+  ]
+}

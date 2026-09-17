@@ -1,0 +1,1238 @@
+{
+  "meta": {
+    "owner": "Community",
+    "created": "2026-09-17",
+    "version": 1,
+    "imagesPath": "images/"
+  },
+  "dna": {
+    "name": "Design-DNA",
+    "description": "Grundprinzipien, die sich durch jede Sammlung ziehen. Sie machen eine Seite unabhängig vom gewählten Stil als deine eigene erkennbar.",
+    "constants": [
+      "Klare Hierarchie und gut lesbare Typografie",
+      "Gestaltungsrichtung passend zum Projekt und zur Zielgruppe wählen",
+      "Referenzen bewusst kombinieren und mit eigenen Inhalten umsetzen"
+    ],
+    "never": [
+      "Unlesbare Texte und fehlende Kontraste",
+      "Bewegung ohne Rücksicht auf reduzierte Animationen",
+      "Fremde Werbeaussagen oder Logos ungeprüft übernehmen"
+    ]
+  },
+  "collections": [
+    {
+      "id": "monumental-editorial",
+      "name": "Monumental Editorial",
+      "description": "Übergroße Typografie, asymmetrischer Weißraum und sorgfältig platzierte Galeriebilder. Layout und Schriftmaßstab prägen den Auftritt.",
+      "deployFor": "Architektur, Designstudios, Portfolios, Galerien und Kulturmarken.",
+      "vocabulary": [
+        "monumentale serifenlose Typografie",
+        "versetzte Überschriftszeilen",
+        "asymmetrisches redaktionelles Raster",
+        "extremer Freiraum",
+        "eingesetzte Bildergalerie",
+        "zurückhaltender Akzent"
+      ],
+      "risk": "Lass eine Überschrift fast die gesamte Bildschirmbreite einnehmen und durchbrich ihre Geometrie mit einem kleinen Bild.",
+      "accent": "#AD8969",
+      "imageStyle": "Redaktionelles Bild von [MOTIV], bewusst gewählter Galerieausschnitt, natürliche Materialdetails, zurückhaltende Farbpalette, keine Schrift; übergroße Typografie und Weißraum im Code umsetzen."
+    },
+    {
+      "id": "product-led-minimalism",
+      "name": "Product-Led Minimalism",
+      "description": "Klare weiße Einstiegsseiten, deren Hauptmotiv das tatsächliche Produkt ist. Ein gezielter Farbakzent oder atmosphärischer Hintergrund rahmt es ein.",
+      "deployFor": "SaaS-Plattformen, Produktivitätswerkzeuge, Übersichtsoberflächen und Anwendungen für Arbeitsabläufe.",
+      "vocabulary": [
+        "klare Hierarchie mit serifenloser Schrift",
+        "Weißraum",
+        "Produktansicht als Beleg",
+        "zurückhaltende Oberflächenelemente",
+        "kontrastierendes Paar von Aktionsschaltflächen",
+        "gerahmte Demonstration der Oberfläche"
+      ],
+      "risk": "Lass eine einzige gut lesbare Produktinteraktion den größten Teil des Einstiegsbereichs einnehmen.",
+      "accent": "#FF671D",
+      "imageStyle": "Dezenter atmosphärischer Hintergrund für [MOTIV], gezielte Akzentfarben und ruhige Mitte, keine Oberfläche und kein Text; Produktdemonstrationen mit echten Bildschirmaufnahmen oder Code umsetzen."
+    },
+    {
+      "id": "technical-systems",
+      "name": "Technical Systems",
+      "description": "Die Präzision einer Instrumententafel trifft auf übergroße redaktionelle Schrift: Karten, Sensorbilder, Raster, technische Daten und sparsame signalorange Anmerkungen.",
+      "deployFor": "Geodatenwerkzeuge, Ingenieurwesen, Robotik, wissenschaftliche Instrumente und technische Produktpräsentationen.",
+      "vocabulary": [
+        "monumentale Grotesk-Überschriften",
+        "Telemetrie in Festbreitenschrift",
+        "Koordinatenraster",
+        "Sensorbilder",
+        "seitliche Leisten mit technischen Daten",
+        "signalorange Akzente",
+        "Zielmarkierungsklammern"
+      ],
+      "risk": "Baue die Seite um ein mit Anmerkungen versehenes Bildfeld auf und gib der Überschrift einen architektonischen Maßstab.",
+      "accent": "#FF5A00",
+      "imageStyle": "Luftbildartige oder sensorähnliche Darstellung von [MOTIV], zurückhaltender filmischer Kontrast, gut erkennbare Textur und Geländeformen, keine Schrift und keine Messwerte; Instrumentenanzeigen separat mit SVG oder CSS umsetzen."
+    },
+    {
+      "id": "luminous-futurism",
+      "name": "Luminous Futurism",
+      "description": "Dunkle filmische Lichtfelder, schillernde Naturmotive und optische Texturen. Helle Lichtfäden und sanftes Überstrahlen bestimmen die Atmosphäre.",
+      "deployFor": "Kreativtechnologie, KI-Werkzeuge, experimentelle Studios und ausdrucksstarke Produkteinführungen.",
+      "vocabulary": [
+        "leuchtende Lichtfäden",
+        "tief marineblauer Freiraum",
+        "schillerndes botanisches Motiv",
+        "blaue und bernsteinfarbene Glanzlichter",
+        "optisches Überstrahlen",
+        "bildgeführte Komposition"
+      ],
+      "risk": "Mache ein einziges leuchtendes organisches Motiv zum Mittelpunkt des gesamten Einstiegsbereichs.",
+      "accent": "#2DAACB",
+      "imageStyle": "[MOTIV], beleuchtet von blauen und warmen bernsteinfarbenen Lichtfäden vor tief marineblauem Hintergrund, zurückhaltendes Überstrahlen, plastische Textur, bewusst freigehaltene dunkle Textfläche, keine Schrift."
+    },
+    {
+      "id": "cinematic-still-life",
+      "name": "Cinematic Still Life",
+      "description": "Haptisch wirkende Objekte in dramatischem Studiolicht, mit ruhigem Freiraum und feiner Typografie. Materialien und Komposition vermitteln Qualität.",
+      "deployFor": "Hochwertige physische Produkte, Handwerk, Gastronomie und Hotellerie, Clubs und Luxuseinzelhandel.",
+      "vocabulary": [
+        "dunkle Studiobeleuchtung",
+        "haptischer Materialkontrast",
+        "außermittige Objektgruppe",
+        "tiefer dunkler Freiraum",
+        "feine große Serifenschrift",
+        "filmische Tiefenwirkung im Vordergrund"
+      ],
+      "risk": "Lass das physische Motiv und seine Beleuchtung die gesamte dekorative Wirkung der Seite erzeugen.",
+      "accent": "#97784C",
+      "imageStyle": "Hochwertiges Studio-Stillleben von [MOTIV], haptisch wirkende Naturmaterialien, dramatisches weiches Seitenlicht, tiefdunkler Hintergrund, Motiv auf einer Seite und Freiraum auf der anderen, keine Schrift."
+    },
+    {
+      "id": "vast-quiet-cinematic",
+      "name": "Vast Quiet Cinematic",
+      "description": "Eine gewaltige atmosphärische Landschaft mit Dunst, Nebel oder Dämmerungsfarben. Darin schwebt kleine, zurückhaltende Schrift. Stille vermittelt Größe.",
+      "deployFor": "Vertrauen im Unternehmensumfeld, wegweisende Unternehmen und seriöse KI- oder Infrastrukturmarken.",
+      "vocabulary": [
+        "monumentale Landschaftsfotografie",
+        "Dunst- und Nebelatmosphäre",
+        "Farbgebung in Dämmerungstönen",
+        "kleine zentrierte serifenlose Schrift",
+        "extremer Freiraum",
+        "zweifarbige Überschrift",
+        "zurückhaltende Aktionsschaltfläche"
+      ],
+      "risk": "Lass die Landschaft 90 Prozent des sichtbaren Bereichs einnehmen und reduziere die Überschrift auf eine flüsternde Größe.",
+      "accent": "#2E4A46",
+      "imageStyle": "Weiträumige Luftaufnahme von [MOTIV], dichter Dunst und Nebel, entsättigte filmische Farbgebung mit hellem Nebelweiß oder dunkler petrolfarbener Dämmerung, obere Hälfte geht in einen hellen strukturlosen Himmel als Überschriftsfläche über, epische Größe, keine Menschen, matte fotografische Oberfläche."
+    },
+    {
+      "id": "illustrated-storybook",
+      "name": "Illustrated Storybook",
+      "description": "Malerisch illustrierte Welten mit kräftiger großer Schrift oder Bildern innerhalb von Buchstaben. Warm, menschlich und ein wenig wundersam – für Verbraucherprodukte, ohne kindlich zu wirken.",
+      "deployFor": "Verbraucherprodukte, die Wärme, Neugier und Freude vermitteln.",
+      "vocabulary": [
+        "malerische Illustration",
+        "kräftige große Wortmarke",
+        "Bilder als Buchstabenfüllung",
+        "Bilderbuchszene",
+        "gesättigte, abgestimmte Farbpalette",
+        "geteilte Fläche mit Illustration"
+      ],
+      "risk": "Lege die gesamte Markenwortmarke als Maske über die illustrierte Szene, sodass die Buchstaben zu Fenstern werden.",
+      "accent": "#2F5233",
+      "imageStyle": "[MOTIV] als malerische Bilderbuchillustration im Gouache- oder Animationshintergrundstil, gesättigte und zugleich stimmig abgestimmte Farbpalette, weiches gemaltes Licht, wundersam ohne kindlich zu wirken, filmische Komposition mit einer klaren ruhigen Himmels- oder Wasserfläche für Schrift."
+    },
+    {
+      "id": "warm-editorial-luxury",
+      "name": "Warm Editorial Luxury",
+      "description": "Warme Naturfarben, feine Serifenschrift und großzügige, redaktionell gesetzte Bildfolgen. Luxus entsteht aus Materialität, Ruhe und sorgfältigen Proportionen.",
+      "deployFor": "Hotels, Gastronomie, Wellness, Kunst und hochwertige Dienstleister.",
+      "vocabulary": [
+        "warme Naturtöne",
+        "feine Serifenschrift",
+        "großzügiger Freiraum",
+        "redaktionelle Bildfolgen"
+      ],
+      "risk": "Wechsle bewusst zwischen bildfüllender Atmosphäre und kleinen, sorgfältig gerahmten Details.",
+      "accent": "#B99672",
+      "imageStyle": "Fotografie von [MOTIV] in warmem natürlichem Licht, haptische Materialien, ruhige Farbtöne und bewusst freier Raum. Keine Schrift oder Oberfläche ins Bild einbauen."
+    },
+    {
+      "id": "cinematic-brand-storytelling",
+      "name": "Cinematic Brand Storytelling",
+      "description": "Bildschirmfüllende Film- und Bildszenen erzählen eine Markengeschichte. Wenige Bedienelemente, klare Kapitel und gezielte Scroll-Inszenierung führen durch die Seite.",
+      "deployFor": "Automobilmarken, Hotellerie, Premium-Produkte und Markeninszenierungen.",
+      "vocabulary": [
+        "bildfüllende Szenen",
+        "reduzierte Navigation",
+        "filmische Bildführung",
+        "szenische Kapitel",
+        "zurückhaltende Textüberlagerung"
+      ],
+      "risk": "Entwickle eine prägnante Bildfolge. Bewegung muss den Inhalt unterstützen und bei reduzierter Bewegung durch statische Ansichten ersetzbar bleiben.",
+      "accent": "#536B72",
+      "imageStyle": "Filmische Aufnahme von [MOTIV] mit kontrolliertem Licht, deutlicher räumlicher Tiefe und ruhigem Freiraum für separat gesetzte Texte. Keine Schrift, Logos oder UI im Bild."
+    },
+    {
+      "id": "warm-product-editorial",
+      "name": "Warm Product Editorial",
+      "description": "Warme, redaktionelle Softwaregestaltung: prägnante Serifenschrift, helle papierartige Flächen, natürliche Farben und sorgfältig inszenierte Produktansichten. Menschliche Anwendungssituationen machen digitale Produkte zugänglich.",
+      "deployFor": "Produktivitätssoftware, KI-Werkzeuge, Finanzanwendungen und vertrauensbasierte digitale Dienstleistungen.",
+      "vocabulary": [
+        "redaktionelle Serifenschrift",
+        "warme Neutralfarben",
+        "papierartige Flächen",
+        "großzügiger Weißraum",
+        "konkrete Produktoberflächen"
+      ],
+      "risk": "Die Atmosphäre darf die Erklärung der Software nicht verdrängen. Zeige echte Anwendungssituationen und klare Aktionen; setze große Serifenschrift sparsam ein.",
+      "accent": "#879442",
+      "imageStyle": "Redaktionelle Fotografie von [ANWENDUNGSSITUATION] bei weichem Tageslicht, natürliche Materialien und warme neutrale Farben. Softwareansichten, Texte und Daten separat als echte UI gestalten."
+    }
+  ],
+  "entries": [
+    {
+      "title": "Marco Ambrosi",
+      "sourceUrl": "https://marcoambrosi.salon/",
+      "collection": "cinematic-still-life",
+      "family": "Dunkler Salonauftritt mit redaktionellen Arbeitsbildern",
+      "note": "Anthrazit und kupferfarbene Akzente verbinden großzügige feine Typografie mit echten Bildern aus der Arbeit. Die Leistung wird über Handwerk und Ergebnis vermittelt; keine austauschbare Shopgestaltung.",
+      "vocabulary": [
+        "Anthrazit",
+        "kupferfarbene Akzente",
+        "feine serifenlose Großschrift",
+        "versetzte Bildspalten",
+        "großzügige Abstände"
+      ],
+      "heroUsage": "Drei versetzte Bildspalten im Einstieg; danach großzügige Abschnitte zu Leistungen. Die Extension-Unterseite setzt asymmetrische Arbeitsaufnahmen neben kurze Beschreibungen.",
+      "imageRecipe": "Authentische redaktionelle Nahaufnahme von [MOTIV] im Salon, warme natürliche Haut- und Materialtöne, seitliches Licht, ruhiger dunkler Hintergrund, handwerkliche Details. Keine Schrift, Logos oder Bedienelemente ins Bild einbauen.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Texte und Bilder treten beim Erreichen der Leistungsbereiche weich hervor. Die versetzten Bildpositionen sind Teil des Layouts; unterschiedliche Parallax-Geschwindigkeiten wurden nicht belegt.",
+        "limitations": "Interaktive Desktop-Stichprobe vom 17.09.2026. Keine vollständige Mobile-, Hover- oder Performance-Prüfung. Zeiten und Bibliotheken wurden nicht ausgelesen. Spätere automatische Clips sind zusätzliche Stichproben und können von der manuellen Ansicht abweichen.",
+        "method": "manual-browser",
+        "effects": [
+          {
+            "name": "Einblendungen von Leistungen",
+            "location": "Leistungsabschnitte und Bilder",
+            "trigger": "entry",
+            "description": "Texte und Bilder treten beim Erreichen der Leistungsbereiche weich hervor. Die versetzten Bildpositionen sind Teil des Layouts; unterschiedliche Parallax-Geschwindigkeiten wurden nicht belegt.",
+            "recipe": "Bilder und Überschriften beim Eintritt mit einer kurzen Opazitätsanimation sichtbar machen. Versetzte Spalten im Raster gestalten; ohne Animation bleiben alle Inhalte lesbar.",
+            "confidence": "observed"
+          }
+        ]
+      },
+      "id": "community-01",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "CRISP",
+      "sourceUrl": "https://www.crispmtl.com/",
+      "collection": "monumental-editorial",
+      "family": "Urbanes Editorial für einen Barber",
+      "note": "Sehr kräftige schwarze Schrift, cremefarbene Flächen und feine vertikale Rasterlinien geben dem Salon einen eigenständigen modernen Auftritt. Das Portfolio präsentiert Haarschnitte wie eine Modestrecke.",
+      "vocabulary": [
+        "kräftige Großschrift",
+        "cremefarbener Grund",
+        "vertikale Rasterlinien",
+        "Modefotografie",
+        "Schwarz-Weiß-Kontrast"
+      ],
+      "heroUsage": "Bildfüllender Einstieg mit zentraler Buchungsaktion, danach großformatige Kapitelüberschriften. Im Portfolio stehen unterschiedlich angeschnittene Porträts in einem großzügigen Raster.",
+      "imageRecipe": "Redaktionelles Porträt von [MOTIV] mit präzisem Haarschnitt, neutraler heller Hintergrund, weiches Studiolicht, selbstbewusster ungewöhnlicher Ausschnitt. Keine Schrift, Logos oder Bedienelemente ins Bild einbauen.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Im Einstieg läuft ein Film vom Haarschnitt. Die Bewegung läuft zeitabhängig; sie wurde nicht als scrollgesteuerte Sequenz bestätigt.",
+        "limitations": "Interaktive Desktop-Stichprobe vom 17.09.2026. Keine vollständige Mobile-, Hover- oder Performance-Prüfung. Zeiten und Bibliotheken wurden nicht ausgelesen. Spätere automatische Clips sind zusätzliche Stichproben und können von der manuellen Ansicht abweichen.",
+        "method": "manual-browser",
+        "effects": [
+          {
+            "name": "Filmischer Einstieg",
+            "location": "Hero",
+            "trigger": "time",
+            "description": "Im Einstieg läuft ein Film vom Haarschnitt. Die Bewegung läuft zeitabhängig; sie wurde nicht als scrollgesteuerte Sequenz bestätigt.",
+            "recipe": "Ein stummes kurzes Hintergrundvideo mit Posterbild einsetzen. Buchungsaktion und Überschrift als echte HTML-Elemente darüberlegen.",
+            "confidence": "observed"
+          }
+        ]
+      },
+      "id": "community-02",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Khufu’s",
+      "sourceUrl": "https://khufus.com/",
+      "collection": "warm-editorial-luxury",
+      "family": "Sandfarbenes Restaurant-Editorial",
+      "note": "Sandfarbene Flächen, große Serifenschrift und nummerierte Kapitel verbinden den Ort mit der Gastronomie. Überlagerte Karten machen Auszeichnungen zu einem interaktiven Bestandteil der Gestaltung.",
+      "vocabulary": [
+        "sandfarbene Flächen",
+        "große Serifenschrift",
+        "nummerierte Kapitel",
+        "überlagerte Karten",
+        "feine Handschrift-Akzente"
+      ],
+      "heroUsage": "Breiter atmosphärischer Einstieg, anschließend asymmetrische Abschnitte. Im Auszeichnungsbereich stehen Erklärung links, gestapelte Bildkarten mittig und die aktive Beschreibung rechts.",
+      "imageRecipe": "Atmosphärische Aufnahme von [MOTIV] in warmer sandfarbener Umgebung, weiches Licht, ruhige Horizontlinie, großzügige freie Flächen, fotografische Tiefenstaffelung. Keine Schrift, Logos oder Bedienelemente ins Bild einbauen.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Beim Klick auf den Weiter-Pfeil wechselt die aktive Karte; die überlagerten Bilder ordnen sich neu und der Zähler springt von 1/4 auf 2/4.",
+        "limitations": "Interaktive Desktop-Stichprobe vom 17.09.2026. Keine vollständige Mobile-, Hover- oder Performance-Prüfung. Zeiten und Bibliotheken wurden nicht ausgelesen. Spätere automatische Clips sind zusätzliche Stichproben und können von der manuellen Ansicht abweichen.",
+        "method": "manual-browser",
+        "effects": [
+          {
+            "name": "Gestapelte Bildkarten",
+            "location": "Bereich Global Recognition",
+            "trigger": "click",
+            "description": "Beim Klick auf den Weiter-Pfeil wechselt die aktive Karte; die überlagerten Bilder ordnen sich neu und der Zähler springt von 1/4 auf 2/4.",
+            "recipe": "Karten überlagern und den aktiven Index über zugängliche Vor-/Zurück-Schaltflächen ändern. Position und Deckkraft animieren; Text und Zähler synchron aktualisieren.",
+            "confidence": "observed"
+          }
+        ]
+      },
+      "id": "community-03",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Passalacqua",
+      "sourceUrl": "https://www.passalacqua.it/en/",
+      "collection": "warm-editorial-luxury",
+      "family": "Klassische Hotel-Eleganz mit asymmetrischen Bildfolgen",
+      "note": "Unterschiedliche Fotoformate und großzügige Ränder vermitteln Ruhe. Die feine Typografie und das zurückhaltende Wappen wirken hochwertig, ohne die Seite mit Dekoration zu überladen.",
+      "vocabulary": [
+        "feine Serifenschrift",
+        "asymmetrische Fotografie",
+        "großzügige Ränder",
+        "kleines Wappen",
+        "warme klassische Eleganz"
+      ],
+      "heroUsage": "Breite See- und Hotelansicht als Einstieg. Darunter wechseln kleine und große Fotos mit bewusst freien Flächen. Navigation reduziert sich nach dem Einstieg.",
+      "imageRecipe": "Redaktionelle Aufnahme von [MOTIV] an einem See oder in einem historischen Interieur, natürliches warmes Licht, gedämpfte elegante Farben, ausgewogene Komposition. Keine Schrift, Logos oder Bedienelemente ins Bild einbauen.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Beim Scrollen wird aus dem vollständigen Markenzeichen ein kleines goldenes Wappen in einer weißen Kopfzeile. Bilder werden beim Erscheinen weich eingeblendet.",
+        "limitations": "Interaktive Desktop-Stichprobe vom 17.09.2026. Keine vollständige Mobile-, Hover- oder Performance-Prüfung. Zeiten und Bibliotheken wurden nicht ausgelesen. Spätere automatische Clips sind zusätzliche Stichproben und können von der manuellen Ansicht abweichen.",
+        "method": "manual-browser",
+        "effects": [
+          {
+            "name": "Reduzierter Kopfbereich und Bild-Reveals",
+            "location": "Navigation und Bildstrecken",
+            "trigger": "scroll",
+            "description": "Beim Scrollen wird aus dem vollständigen Markenzeichen ein kleines goldenes Wappen in einer weißen Kopfzeile. Bilder werden beim Erscheinen weich eingeblendet.",
+            "recipe": "Den Header nach dem Einstieg kompakter gestalten. Bild-Reveals separat über Eintritt ins Sichtfeld steuern; keine feste Parallax-Geschwindigkeit aus dem Screenshot ableiten.",
+            "confidence": "observed"
+          }
+        ]
+      },
+      "id": "community-04",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Beaumier",
+      "sourceUrl": "https://www.beaumier.com/en/",
+      "collection": "cinematic-brand-storytelling",
+      "family": "Filmische Hotellerie mit markanter Schrift",
+      "note": "Der atmosphärische Einstieg verbindet Film mit handschriftlicher Wortmarke und schmalen kräftigen Großbuchstaben. Cremefarbene Hotelkarten führen diese warme, moderne Identität weiter. Angebots-Pop-ups schwächen die Ruhe.",
+      "vocabulary": [
+        "filmischer Einstieg",
+        "handschriftliche Wortmarke",
+        "schmale kräftige Großbuchstaben",
+        "cremefarbene Flächen",
+        "große Hotelbilder"
+      ],
+      "heroUsage": "Bildfüllendes Video mit zentrierter Marke; danach hochformatige Hotelbilder mit klaren Titeln und kurzen Serifentexten.",
+      "imageRecipe": "Filmisches Einzelbild von [MOTIV] mit warmem Sommerlicht, dezent analoger Textur und natürlicher Farbigkeit. Motiv groß inszenieren und eine ruhige Textfläche freihalten. Keine Schrift, Logos oder Bedienelemente ins Bild einbauen.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Im Einstieg läuft ein Film. Nach dem Scrollen wechselt der transparente Header mit weißer Schrift auf eine cremefarbene Fläche mit dunkler Marke. Echtes Parallax wurde nicht bestätigt.",
+        "limitations": "Interaktive Desktop-Stichprobe vom 17.09.2026. Keine vollständige Mobile-, Hover- oder Performance-Prüfung. Zeiten und Bibliotheken wurden nicht ausgelesen. Spätere automatische Clips sind zusätzliche Stichproben und können von der manuellen Ansicht abweichen.",
+        "method": "manual-browser",
+        "effects": [
+          {
+            "name": "Hero-Film und wechselnder Header",
+            "location": "Einstieg und Navigation",
+            "trigger": "time",
+            "description": "Im Einstieg läuft ein Film. Nach dem Scrollen wechselt der transparente Header mit weißer Schrift auf eine cremefarbene Fläche mit dunkler Marke. Echtes Parallax wurde nicht bestätigt.",
+            "recipe": "Film mit statischem Poster und Pausenmöglichkeit einbinden. Den Header-Zustand abhängig vom Verlassen des Hero-Bereichs ändern.",
+            "confidence": "observed"
+          }
+        ]
+      },
+      "id": "community-05",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Grand Hotel Tremezzo",
+      "sourceUrl": "https://grandhoteltremezzo.com/",
+      "collection": "warm-editorial-luxury",
+      "family": "Klassische Hotelinszenierung mit orangem Akzent",
+      "note": "Schmale Serifenschrift und orangefarbene Akzente geben den großen Fotografien einen wiedererkennbaren Rahmen. Der Wechsel von bildfüllendem Einstieg zu gerahmten Fotos schafft einen ruhigen Seitenrhythmus.",
+      "vocabulary": [
+        "schmale Serifenschrift",
+        "orangefarbene Akzente",
+        "große Fotostrecken",
+        "weißer Rahmen",
+        "zentriertes Wappen"
+      ],
+      "heroUsage": "Im Einstieg füllt das Hotelmotiv die Fläche. Nachfolgende Bilder erhalten breite weiße Ränder. Die Navigation bleibt kompakt am oberen Rand.",
+      "imageRecipe": "Hochwertige Fotografie von [MOTIV] an einem See, warmes Tageslicht, natürliche elegante Farben, architektonische Symmetrie und ruhige Wasserflächen. Keine Schrift, Logos oder Bedienelemente ins Bild einbauen.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Nach dem Scrollen erscheint eine weiße Kopfzeile mit reduziertem orangefarbenem Wappen statt der vollständigen weißen Marke über dem Einstiegsmotiv.",
+        "limitations": "Interaktive Desktop-Stichprobe vom 17.09.2026. Keine vollständige Mobile-, Hover- oder Performance-Prüfung. Zeiten und Bibliotheken wurden nicht ausgelesen. Spätere automatische Clips sind zusätzliche Stichproben und können von der manuellen Ansicht abweichen.",
+        "method": "manual-browser",
+        "effects": [
+          {
+            "name": "Kompakter Kopfbereich",
+            "location": "Navigation",
+            "trigger": "scroll",
+            "description": "Nach dem Scrollen erscheint eine weiße Kopfzeile mit reduziertem orangefarbenem Wappen statt der vollständigen weißen Marke über dem Einstiegsmotiv.",
+            "recipe": "Zwischen einem transparenten Hero-Header und einem kompakten hellen Header wechseln. Die Markenreduzierung ruhig und ohne springendes Layout gestalten.",
+            "confidence": "observed"
+          }
+        ]
+      },
+      "id": "community-06",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Aman",
+      "sourceUrl": "https://www.aman.com/",
+      "collection": "warm-editorial-luxury",
+      "family": "Zurückhaltender Luxus in warmen Naturfarben",
+      "note": "Die Seite wirkt über warme helle Flächen, ruhige Serifenschrift und sorgfältige Bildproportionen. Ihre Stärke liegt in der Zurückhaltung, nicht in einer auffälligen Effektfolge.",
+      "vocabulary": [
+        "warme helle Flächen",
+        "ruhige Serifenschrift",
+        "große Bildproportionen",
+        "dezente Links",
+        "ausgewogene Zweispaltigkeit"
+      ],
+      "heroUsage": "Breiter Einstieg, anschließend unterschiedlich breite Bildspalten mit kurzen Beschreibungen. Reservierung bleibt im Kopfbereich erreichbar.",
+      "imageRecipe": "Architektur- und Interieurfotografie von [MOTIV], weiches Tageslicht, Naturmaterialien, Beige- und Sandtöne, ruhige klare Linien, großzügiger negativer Raum. Keine Schrift, Logos oder Bedienelemente ins Bild einbauen.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Die Navigation bleibt beim Scrollen am oberen Rand erreichbar. Weitere spezielle Scroll- oder Parallax-Effekte wurden in der geprüften Strecke nicht bestätigt.",
+        "limitations": "Interaktive Desktop-Stichprobe vom 17.09.2026. Keine vollständige Mobile-, Hover- oder Performance-Prüfung. Zeiten und Bibliotheken wurden nicht ausgelesen. Spätere automatische Clips sind zusätzliche Stichproben und können von der manuellen Ansicht abweichen.",
+        "method": "manual-browser",
+        "effects": [
+          {
+            "name": "Zurückhaltender Kopfbereich",
+            "location": "Navigation",
+            "trigger": "scroll",
+            "description": "Die Navigation bleibt beim Scrollen am oberen Rand erreichbar. Weitere spezielle Scroll- oder Parallax-Effekte wurden in der geprüften Strecke nicht bestätigt.",
+            "recipe": "Eine kompakte sticky Navigation mit klarer Reservierungsaktion nutzen. Zusätzliche Animationen nur einsetzen, wenn sie den ruhigen Aufbau unterstützen.",
+            "confidence": "observed"
+          }
+        ]
+      },
+      "id": "community-07",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Bugatti — Tourbillon",
+      "sourceUrl": "https://www.bugatti.com/en/models/tourbillon",
+      "collection": "cinematic-brand-storytelling",
+      "family": "Scrollgesteuerte technische Produktinszenierung",
+      "note": "Das Fahrzeug wird wie ein Ausstellungsobjekt inszeniert. Eine längere gebundene Scrollstrecke verbindet wechselnde Perspektiven mit kurzen technischen Erklärungen; diese Unterseite ist die eigentliche Referenz.",
+      "vocabulary": [
+        "schwarzer Hintergrund",
+        "großes Fahrzeugmotiv",
+        "technische Festbreitenschrift",
+        "schwebende Kapitelnavigation",
+        "wechselnde Perspektiven"
+      ],
+      "heroUsage": "Filmischer Einstieg. Danach bleibt die Fahrzeugsektion im sichtbaren Bereich, während Perspektive und Informationstexte entlang des Scrollfortschritts wechseln.",
+      "imageRecipe": "Dramatische Studioaufnahme von [MOTIV], schwarzer Hintergrund, präzise Lichtkanten auf Metall und Glas, hochwertige Materialdetails, großzügige dunkle Freifläche. Keine Schrift, Logos oder Bedienelemente ins Bild einbauen.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Beim Vorwärtsscrollen verändert sich die Ansicht des Fahrzeugs innerhalb derselben Bildsektion. Ohne Scrollen blieb die geprüfte Ansicht stehen; beim Zurückscrollen änderte sie sich zurück. Die begleitenden Texte wechseln entlang der Strecke.",
+        "limitations": "Interaktive Desktop-Stichprobe vom 17.09.2026. Keine vollständige Mobile-, Hover- oder Performance-Prüfung. Zeiten und Bibliotheken wurden nicht ausgelesen. Spätere automatische Clips sind zusätzliche Stichproben und können von der manuellen Ansicht abweichen.",
+        "method": "manual-browser",
+        "effects": [
+          {
+            "name": "Scrollgekoppelte Fahrzeugperspektive",
+            "location": "Tourbillon-Produktsektion nach dem Einstieg",
+            "trigger": "scroll",
+            "description": "Beim Vorwärtsscrollen verändert sich die Ansicht des Fahrzeugs innerhalb derselben Bildsektion. Ohne Scrollen blieb die geprüfte Ansicht stehen; beim Zurückscrollen änderte sie sich zurück. Die begleitenden Texte wechseln entlang der Strecke.",
+            "recipe": "Eine begrenzte sticky Szene anlegen. Normalisierten Scrollfortschritt an eine Bildsequenz oder 3D-Kamera koppeln; Erklärungen an definierten Fortschrittsmarken wechseln. Unter reduzierter Bewegung statische Perspektiven mit Text anbieten.",
+            "confidence": "observed"
+          }
+        ]
+      },
+      "id": "community-08",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Rolls-Royce",
+      "sourceUrl": "https://www.rolls-roycemotorcars.com/",
+      "collection": "cinematic-brand-storytelling",
+      "family": "Bildschirmfüllende Marken-Kapitel",
+      "note": "Große Kampagnenszenen, feine Linien und weit gesetzte Schrift vermitteln eine inszenierte Premium-Welt. Die Bildqualität trägt einen großen Teil der Wirkung.",
+      "vocabulary": [
+        "bildfüllende Szenen",
+        "weit gesetzte Schrift",
+        "feine Linien",
+        "seitliche Positionspunkte",
+        "reduzierte Aktionsschaltflächen"
+      ],
+      "heroUsage": "Große Szenen folgen aufeinander. Seitliche Punkte zeigen den Abschnitt; der kompakte Kopfbereich hält Menü und Händlersuche erreichbar.",
+      "imageRecipe": "Filmische Aufnahme von [MOTIV] in hochwertiger urbaner Umgebung, kontrollierte Reflexe, dramatische aber natürliche Beleuchtung, große ruhige Flächen für separat gesetzte Typografie. Keine Schrift, Logos oder Bedienelemente ins Bild einbauen.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Beim Scrollen wechselt der bildfüllende Kampagnenabschnitt; die seitliche Positionsanzeige verändert sich passend dazu. Exakte Übergangskurven wurden nicht gemessen.",
+        "limitations": "Interaktive Desktop-Stichprobe vom 17.09.2026. Keine vollständige Mobile-, Hover- oder Performance-Prüfung. Zeiten und Bibliotheken wurden nicht ausgelesen. Spätere automatische Clips sind zusätzliche Stichproben und können von der manuellen Ansicht abweichen.",
+        "method": "manual-browser",
+        "effects": [
+          {
+            "name": "Wechsel zwischen Kampagnenszenen",
+            "location": "Startseite",
+            "trigger": "scroll",
+            "description": "Beim Scrollen wechselt der bildfüllende Kampagnenabschnitt; die seitliche Positionsanzeige verändert sich passend dazu. Exakte Übergangskurven wurden nicht gemessen.",
+            "recipe": "Große klar getrennte Abschnitte mit einer zugänglichen Positionsnavigation verwenden. Scroll-Snap nur behutsam und ohne die normale Navigation einzuschränken einsetzen.",
+            "confidence": "observed"
+          }
+        ]
+      },
+      "id": "community-09",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Audemars Piguet",
+      "sourceUrl": "https://www.audemarspiguet.com/",
+      "collection": "cinematic-still-life",
+      "family": "Dunkle Produktinszenierung mit typografischem Kontrast",
+      "note": "Sehr feine serifenlose Schrift trifft auf große kursive Serifenschrift. Die schwarze Fläche und nahen Produktmotive erzeugen Spannung; die Produktliste darunter ist konventioneller.",
+      "vocabulary": [
+        "schwarze Flächen",
+        "feine serifenlose Schrift",
+        "kursive Serifenschrift",
+        "große Produktdetails",
+        "horizontale Produktreihe"
+      ],
+      "heroUsage": "Großes Kampagnenmotiv und mehrzeilige Typografie im Einstieg; darunter links ein Kapiteltext und rechts eine horizontale Reihe von Produkten.",
+      "imageRecipe": "Makro-Studioaufnahme von [MOTIV], kontrolliertes weiches Licht, präzise Metall- und Glasdetails, dunkler ruhiger Hintergrund, keine eingebrannte Beschriftung. Keine Schrift, Logos oder Bedienelemente ins Bild einbauen.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Eine horizontale Produktreihe mit Weiter-Schaltfläche ist sichtbar. Deren Übergangsanimation wurde bei der manuellen Prüfung nicht betätigt und ist deshalb nicht als beobachteter Effekt dokumentiert.",
+        "limitations": "Interaktive Desktop-Stichprobe vom 17.09.2026. Keine vollständige Mobile-, Hover- oder Performance-Prüfung. Zeiten und Bibliotheken wurden nicht ausgelesen. Spätere automatische Clips sind zusätzliche Stichproben und können von der manuellen Ansicht abweichen.",
+        "method": "manual-browser",
+        "effects": [
+          {
+            "name": "Produktkarussell als Prüfpunkt",
+            "location": "Produktneuheiten",
+            "trigger": "unknown",
+            "description": "Eine horizontale Produktreihe mit Weiter-Schaltfläche ist sichtbar. Deren Übergangsanimation wurde bei der manuellen Prüfung nicht betätigt und ist deshalb nicht als beobachteter Effekt dokumentiert.",
+            "recipe": "Falls übernommen: zugängliches horizontales Karussell mit klaren Schaltflächen; Bewegung und Dauer erst nach eigener Prüfung festlegen.",
+            "confidence": "unverified"
+          }
+        ]
+      },
+      "id": "community-10",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Molteni&C",
+      "sourceUrl": "https://www.molteni.it/",
+      "collection": "monumental-editorial",
+      "family": "Asymmetrisches Möbel-Editorial",
+      "note": "Die geprüfte Geometry-of-Life-Inszenierung kombiniert unterschiedlich große Filmszenen und Fotos mit kleinen nummerierten Bildunterschriften. Der Eindruck ist redaktionell statt katalogartig.",
+      "vocabulary": [
+        "asymmetrische Bildgrößen",
+        "nummerierte Bildunterschriften",
+        "große Freiflächen",
+        "filmische Interieurs",
+        "redaktionelles Raster"
+      ],
+      "heroUsage": "Eine große Bildfläche steht neben kleiner Erklärung und Detailbild. Weiter unten wechseln kleine und sehr große Motive die Seiten; Beschriftungen bleiben knapp.",
+      "imageRecipe": "Redaktionelle Interieuraufnahme von [MOTIV], warmes gerichtetes Licht, natürliche Texturen, architektonisch präzise Linien, bewohnte aber ruhige Atmosphäre. Keine Schrift, Logos oder Bedienelemente ins Bild einbauen.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Die Seite präsentiert Filmszenen innerhalb ihrer redaktionellen Bildflächen. Eine Bindung der Filmzeit an den Scrollfortschritt wurde nicht bestätigt.",
+        "limitations": "Interaktive Desktop-Stichprobe vom 17.09.2026. Keine vollständige Mobile-, Hover- oder Performance-Prüfung. Zeiten und Bibliotheken wurden nicht ausgelesen. Spätere automatische Clips sind zusätzliche Stichproben und können von der manuellen Ansicht abweichen.",
+        "method": "manual-browser",
+        "effects": [
+          {
+            "name": "Filmische Bildbereiche",
+            "location": "Geometry of Life",
+            "trigger": "time",
+            "description": "Die Seite präsentiert Filmszenen innerhalb ihrer redaktionellen Bildflächen. Eine Bindung der Filmzeit an den Scrollfortschritt wurde nicht bestätigt.",
+            "recipe": "Kurze stumme Filme als Medien im asymmetrischen Raster behandeln. Statische Poster bereitstellen und Layoutgrößen vor dem Laden reservieren.",
+            "confidence": "inferred"
+          }
+        ]
+      },
+      "id": "community-11",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Vipp",
+      "sourceUrl": "https://vipp.com/en",
+      "collection": "cinematic-still-life",
+      "family": "Materialorientierte Bildmatrix in Hell und Dunkel",
+      "note": "Die Bildmatrix setzt Materialdetails zu einer zusammenhängenden Welt zusammen. Der Wechsel von heller zu dunkelbrauner Gestaltung vermittelt die Varianten des Schranksystems.",
+      "vocabulary": [
+        "Bildmatrix",
+        "dunkelbraune Flächen",
+        "Materialdetails",
+        "helle und dunkle Bildwelt",
+        "zurückhaltende Typografie"
+      ],
+      "heroUsage": "Ein dichtes Raster verschiedener Material- und Produktansichten steht im Mittelpunkt. Danach folgen großzügige Textflächen und große Wohnbilder.",
+      "imageRecipe": "Stillleben von [MOTIV] aus Naturmaterialien, weiches seitliches Licht, fein erkennbare Holz- oder Metallstruktur, Palette aus Braun, Creme und Schwarz, klare ruhige Geometrie. Keine Schrift, Logos oder Bedienelemente ins Bild einbauen.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Zwischen den geprüften Scrollzuständen wechselt die Bildmatrix von einer hellen in eine dunkelbraune Umgebung. Die genaue zeitliche Kopplung wurde nicht isoliert gemessen.",
+        "limitations": "Interaktive Desktop-Stichprobe vom 17.09.2026. Keine vollständige Mobile-, Hover- oder Performance-Prüfung. Zeiten und Bibliotheken wurden nicht ausgelesen. Spätere automatische Clips sind zusätzliche Stichproben und können von der manuellen Ansicht abweichen.",
+        "method": "manual-browser",
+        "effects": [
+          {
+            "name": "Wechsel der hellen und dunklen Bildwelt",
+            "location": "Einstieg mit Cabinet System",
+            "trigger": "scroll",
+            "description": "Zwischen den geprüften Scrollzuständen wechselt die Bildmatrix von einer hellen in eine dunkelbraune Umgebung. Die genaue zeitliche Kopplung wurde nicht isoliert gemessen.",
+            "recipe": "Helle und dunkle Zustände einer Bildwelt entwerfen. Den Farbwechsel erst nach Prüfung bewusst an Scrollfortschritt oder Abschnittseintritt koppeln; Kontraste während des Übergangs erhalten.",
+            "confidence": "inferred"
+          }
+        ]
+      },
+      "id": "community-12",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Norm Architects",
+      "sourceUrl": "https://normcph.com/",
+      "collection": "monumental-editorial",
+      "family": "Ruhiges Architektur-Editorial",
+      "note": "Cremefarbener Hintergrund und unterschiedlich breite Bildspalten lassen Architektur und Materialität wirken. Kleine redaktionelle Beschriftungen und sanfte Einblendungen halten die Oberfläche zurückhaltend.",
+      "vocabulary": [
+        "cremefarbener Grund",
+        "asymmetrische Spalten",
+        "kleine redaktionelle Beschriftungen",
+        "natürliche Materialien",
+        "ruhiger Freiraum"
+      ],
+      "heroUsage": "Breites Architekturmotiv als Einstieg; darunter Raster mit kleinen schmalen Bildern neben größeren Querformaten. Projektbezeichnungen und Kategorien bleiben untergeordnet.",
+      "imageRecipe": "Architekturfotografie von [MOTIV], diffuse natürliche Beleuchtung, zurückhaltende erdige Farben, hochwertige Materialtexturen und klare Linien, ohne künstliche Hochglanzwirkung. Keine Schrift, Logos oder Bedienelemente ins Bild einbauen.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Beim Scrollen erschienen Projektbilder zunächst mit geringer Deckkraft und wurden anschließend vollständig sichtbar. Unterschiedliche Spaltenbreiten gehören zum Layout.",
+        "limitations": "Interaktive Desktop-Stichprobe vom 17.09.2026. Keine vollständige Mobile-, Hover- oder Performance-Prüfung. Zeiten und Bibliotheken wurden nicht ausgelesen. Spätere automatische Clips sind zusätzliche Stichproben und können von der manuellen Ansicht abweichen.",
+        "method": "manual-browser",
+        "effects": [
+          {
+            "name": "Sanfte Projektbild-Einblendungen",
+            "location": "Projektübersicht",
+            "trigger": "entry",
+            "description": "Beim Scrollen erschienen Projektbilder zunächst mit geringer Deckkraft und wurden anschließend vollständig sichtbar. Unterschiedliche Spaltenbreiten gehören zum Layout.",
+            "recipe": "Projektbilder mit einer dezenten Opazitätsanimation beim Eintritt sichtbar machen. Das Layout darf dabei nicht springen; bei reduzierter Bewegung sofort vollständig anzeigen.",
+            "confidence": "observed"
+          }
+        ]
+      },
+      "id": "community-13",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Casabianca Como",
+      "sourceUrl": "https://casabiancacomo.com/en/",
+      "collection": "monumental-editorial",
+      "family": "Grafisches Kunst- und Hospitality-Editorial",
+      "note": "Ein übergroßer Schriftzug eröffnet die Seite. Versetzte Kunst- und Interieurfotos treffen auf großzügige Serifentexte und lassen das Haus wie einen kuratierten Ort erscheinen.",
+      "vocabulary": [
+        "übergroßer Schriftzug",
+        "versetzte Bildflächen",
+        "großzügige Serifentexte",
+        "weißer Hintergrund",
+        "grafischer Akzent"
+      ],
+      "heroUsage": "Große Marke über dem Einstiegsmotiv; weiter unten asymmetrisch platzierte Fotografien mit viel freier Fläche. Ein größerer Textblock erklärt den Ort.",
+      "imageRecipe": "Redaktionelle Fotografie von [MOTIV] in einem lichtdurchfluteten Interieur mit zeitgenössischer Kunst, natürliche Farben, präziser Ausschnitt und ruhige Bildbalance. Keine Schrift, Logos oder Bedienelemente ins Bild einbauen.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Die sehr große Wortmarke im Einstieg wird beim Scrollen durch eine kleine schwarze Marke in der weißen Kopfzeile abgelöst.",
+        "limitations": "Interaktive Desktop-Stichprobe vom 17.09.2026. Keine vollständige Mobile-, Hover- oder Performance-Prüfung. Zeiten und Bibliotheken wurden nicht ausgelesen. Spätere automatische Clips sind zusätzliche Stichproben und können von der manuellen Ansicht abweichen.",
+        "method": "manual-browser",
+        "effects": [
+          {
+            "name": "Reduzierung der Wortmarke",
+            "location": "Kopfbereich",
+            "trigger": "scroll",
+            "description": "Die sehr große Wortmarke im Einstieg wird beim Scrollen durch eine kleine schwarze Marke in der weißen Kopfzeile abgelöst.",
+            "recipe": "Große Einstiegsmarke und kompakte Navigationsmarke als getrennte Layoutzustände gestalten. Den Wechsel weich ausführen und ausreichend Kontrast erhalten.",
+            "confidence": "observed"
+          }
+        ]
+      },
+      "id": "community-14",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Linear",
+      "sourceUrl": "https://linear.app/",
+      "collection": "technical-systems",
+      "family": "Produktmanagement · Technical Systems",
+      "note": "Fast schwarzer Grund, präzise Typohierarchie, große Produktansicht und feine technische Linienillustrationen. Technical Systems: Das Produkt, seine Arbeitsabläufe und präzise technische Diagramme bestimmen die Gestaltung.",
+      "vocabulary": [
+        "Anthrazit",
+        "feine Trennlinien",
+        "technische Drahtmodelle",
+        "große Produktoberfläche",
+        "abgestufte Grautöne"
+      ],
+      "heroUsage": "Linksbündige große Überschrift über einer breiten App-Ansicht. Anschließend werden Arbeitsabläufe als eigenständige Kapitel mit kurzen Einführungen, technischen Illustrationen und konkreten Oberflächen erklärt. Der dunkle Grund verbindet die Abschnitte; Linien und Helligkeitsabstufungen schaffen die Hierarchie.",
+      "imageRecipe": "Technische Linienillustration von [SYSTEM] auf fast schwarzem Hintergrund, dünne graue Konturen, isometrische gestapelte Ebenen und viel Leerraum. Produktoberflächen separat als echte HTML-Elemente mit plausiblen Beispieldaten gestalten.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Die öffentliche Desktopseite wurde im Einstieg und in weiteren Produktabschnitten visuell geprüft. Dieses Profil konzentriert sich auf Gestaltung und Informationshierarchie; konkrete Bewegungsabläufe sind noch nicht systematisch ausgewertet.",
+        "method": "manual-browser",
+        "effects": [],
+        "limitations": "Desktop-Stichprobe vom 17.09.2026. Keine vollständige Prüfung von Hover, Klickabläufen, Mobilansicht oder Performance. Eine statische Gesamtaufnahme dokumentiert keine verlässlichen Animationszeiten oder Scroll-Kopplungen."
+      },
+      "id": "community-15",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Attio",
+      "sourceUrl": "https://attio.com/",
+      "collection": "product-led-minimalism",
+      "family": "CRM · Product-Led Minimalism",
+      "note": "Weißraum, feine Rasterlinien, zurückhaltende Akzente und klar gegliederte Produktabschnitte. Product-Led Minimalism: Die Oberfläche erklärt das Angebot, dekorative Elemente bleiben im Hintergrund.",
+      "vocabulary": [
+        "Weißraum",
+        "feines Linienraster",
+        "große serifenlose Schrift",
+        "dezente blaue Akzente",
+        "modulare Produktoberflächen"
+      ],
+      "heroUsage": "Zentrierte Einleitung mit zwei klaren Handlungsoptionen und großer Produktvorschau. Danach folgen weit gesetzte Überschriften und durch feine Linien getrennte Funktionsbereiche. Kurze Texte werden direkt mit dem jeweiligen Arbeitsablauf verknüpft.",
+      "imageRecipe": "Helle Softwareoberfläche für [ANWENDUNG] mit präzisem Spaltenraster, dünnen grauen Trennlinien, weißen Karten und kleinen blauen Zustandsmarkierungen. UI als echte Komponenten bauen; keine zufälligen Texte oder Logos in ein Bild generieren.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Die öffentliche Desktopseite wurde im Einstieg und in weiteren Produktabschnitten visuell geprüft. Dieses Profil konzentriert sich auf Gestaltung und Informationshierarchie; konkrete Bewegungsabläufe sind noch nicht systematisch ausgewertet.",
+        "method": "manual-browser",
+        "effects": [],
+        "limitations": "Desktop-Stichprobe vom 17.09.2026. Keine vollständige Prüfung von Hover, Klickabläufen, Mobilansicht oder Performance. Eine statische Gesamtaufnahme dokumentiert keine verlässlichen Animationszeiten oder Scroll-Kopplungen."
+      },
+      "id": "community-16",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Granola",
+      "sourceUrl": "https://www.granola.ai/",
+      "collection": "warm-product-editorial",
+      "family": "KI-Meetingnotizen · Warm Product Editorial",
+      "note": "Große Serifenschrift, Olivgrün und helle papierartige Produktoberflächen, kombiniert mit Fotografien. Warm Product Editorial: Redaktionelle Typografie und warme Bildwelt machen Software zugänglich und persönlich.",
+      "vocabulary": [
+        "große Serifenschrift",
+        "Olivgrün",
+        "papierartige Oberflächen",
+        "warme Fotografie",
+        "redaktioneller Weißraum"
+      ],
+      "heroUsage": "Eine große mehrzeilige Serifenschlagzeile links steht einer geschichteten Notizansicht mit Fotoelementen rechts gegenüber. Weiter unten wird die Nutzung entlang der Phasen vor, während und nach einem Meeting erklärt. Großzügige Abstände lassen die einzelnen Aussagen wirken.",
+      "imageRecipe": "Redaktionelle Fotografie von [ARBEITSSITUATION] in weichem Tageslicht, warme neutrale Materialien und ein dezenter olivgrüner Akzent. Eine helle Notizoberfläche separat darüber platzieren; Schrift und Bedienelemente als echte UI erstellen.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Die öffentliche Desktopseite wurde im Einstieg und in weiteren Produktabschnitten visuell geprüft. Dieses Profil konzentriert sich auf Gestaltung und Informationshierarchie; konkrete Bewegungsabläufe sind noch nicht systematisch ausgewertet.",
+        "method": "manual-browser",
+        "effects": [],
+        "limitations": "Desktop-Stichprobe vom 17.09.2026. Keine vollständige Prüfung von Hover, Klickabläufen, Mobilansicht oder Performance. Eine statische Gesamtaufnahme dokumentiert keine verlässlichen Animationszeiten oder Scroll-Kopplungen."
+      },
+      "id": "community-17",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Raycast",
+      "sourceUrl": "https://www.raycast.com/",
+      "collection": "luminous-futurism",
+      "family": "Produktivität · Luminous Futurism",
+      "note": "Dunkler Hintergrund, rote und blaue Lichtflächen, schwebende Navigation und großzügige App-Demonstration. Luminous Futurism: Licht, räumliche Tiefe und dunkle digitale Oberflächen prägen die Markenwirkung.",
+      "vocabulary": [
+        "schwarzer Grund",
+        "rote Lichtflächen",
+        "blaue Lichtkanten",
+        "schwebende Navigation",
+        "große App-Demonstration"
+      ],
+      "heroUsage": "Zentrierte Überschrift vor abstrakten diagonalen Lichtflächen, darüber eine abgesetzte dunkle Navigation. Im weiteren Verlauf steht die Software in großem Maßstab im Mittelpunkt. Helle Texte und wenige klare Aktionen setzen sich vom dunklen Umfeld ab.",
+      "imageRecipe": "Abstrakte diagonal verlaufende räumliche Flächen auf Schwarz, weiches rotes Licht und vereinzelte blaue Kanten, feine Körnung, kontrollierter Kontrast. Freiraum für eine separat gesetzte Überschrift lassen.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Die öffentliche Desktopseite wurde im Einstieg und in weiteren Produktabschnitten visuell geprüft. Dieses Profil konzentriert sich auf Gestaltung und Informationshierarchie; konkrete Bewegungsabläufe sind noch nicht systematisch ausgewertet.",
+        "method": "manual-browser",
+        "effects": [],
+        "limitations": "Desktop-Stichprobe vom 17.09.2026. Keine vollständige Prüfung von Hover, Klickabläufen, Mobilansicht oder Performance. Eine statische Gesamtaufnahme dokumentiert keine verlässlichen Animationszeiten oder Scroll-Kopplungen."
+      },
+      "id": "community-18",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Clay",
+      "sourceUrl": "https://www.clay.com/",
+      "collection": "illustrated-storybook",
+      "family": "Vertriebsautomatisierung · Illustrated Storybook",
+      "note": "Eigenständige plastische Illustrationen in einer grünen Landschaft, darunter klare helle Workflow-Oberflächen. Illustrated Storybook: Eine eigenständige illustrative Welt erklärt und emotionalisiert ein technisches Angebot.",
+      "vocabulary": [
+        "plastische Illustrationen",
+        "grüne Landschaft",
+        "spielerische Werkzeuge",
+        "weiche Formen",
+        "helle Workflow-Karten"
+      ],
+      "heroUsage": "Eine illustrierte Landschaft mit plastischen Objekten rahmt die große Einleitung. Darunter wechseln große, helle Produktansichten und erklärende Arbeitsabläufe. Die konkrete Softwaredarstellung erdet die spielerische Bildwelt.",
+      "imageRecipe": "Plastische Illustration von [ARBEITSABLAUF] als kleine Landschaft mit weichen Hügeln, vereinfachten Werkzeugen, Trichtern und verbindenden Formen. Grün und Himmelblau mit sparsamen warmen Farbakzenten, weiche Schatten und feine Materialkörnung. Keine Schrift oder Markenlogos.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Die öffentliche Desktopseite wurde im Einstieg und in weiteren Produktabschnitten visuell geprüft. Dieses Profil konzentriert sich auf Gestaltung und Informationshierarchie; konkrete Bewegungsabläufe sind noch nicht systematisch ausgewertet.",
+        "method": "manual-browser",
+        "effects": [],
+        "limitations": "Desktop-Stichprobe vom 17.09.2026. Keine vollständige Prüfung von Hover, Klickabläufen, Mobilansicht oder Performance. Eine statische Gesamtaufnahme dokumentiert keine verlässlichen Animationszeiten oder Scroll-Kopplungen."
+      },
+      "id": "community-19",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Pitch",
+      "sourceUrl": "https://pitch.com/",
+      "collection": "monumental-editorial",
+      "family": "Präsentationen · Monumental Editorial",
+      "note": "Übergroße weiße Typografie auf Violett, Präsentationscollage und deutlich getrennte Produktbereiche. Monumental Editorial: Maßstab und Satz der Typografie bestimmen den Einstieg stärker als technische Details.",
+      "vocabulary": [
+        "übergroße Typografie",
+        "Violett",
+        "weiße Kontraste",
+        "Präsentationscollage",
+        "helle Produktmodule"
+      ],
+      "heroUsage": "Sehr große zentrierte Überschrift auf violettem Grund mit Präsentationsmotiven im Hintergrund. Eine prominente Eingabe macht die Produktidee direkt sichtbar. Nachfolgende Abschnitte ordnen Funktionen neben größeren Ansichten des Editors.",
+      "imageRecipe": "Collage aus hochwertigen Präsentationsflächen zu [THEMA] mit abstrakten Grafiken und redaktionellen Bildausschnitten auf tiefviolettem Grund. Perspektive und Größen variieren, den zentralen Textbereich ruhig halten. Echte Inhalte und Texte anschließend separat setzen.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Die öffentliche Desktopseite wurde im Einstieg und in weiteren Produktabschnitten visuell geprüft. Dieses Profil konzentriert sich auf Gestaltung und Informationshierarchie; konkrete Bewegungsabläufe sind noch nicht systematisch ausgewertet.",
+        "method": "manual-browser",
+        "effects": [],
+        "limitations": "Desktop-Stichprobe vom 17.09.2026. Keine vollständige Prüfung von Hover, Klickabläufen, Mobilansicht oder Performance. Eine statische Gesamtaufnahme dokumentiert keine verlässlichen Animationszeiten oder Scroll-Kopplungen."
+      },
+      "id": "community-20",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Chronicle",
+      "sourceUrl": "https://chroniclehq.com/",
+      "collection": "product-led-minimalism",
+      "family": "KI-Präsentationen · Product-Led Minimalism",
+      "note": "Ruhige grauweiße Bühne, große Produktansicht neben dem Text, feine Raster und reduzierte Funktionskarten. Product-Led Minimalism: Das sichtbare Arbeitsergebnis übernimmt die Kommunikation, die umgebende Gestaltung bleibt ruhig.",
+      "vocabulary": [
+        "grauweiße Bühne",
+        "große Produktansicht",
+        "feines Raster",
+        "reduzierte Funktionskarten",
+        "schwarze Aktionen"
+      ],
+      "heroUsage": "Klare Zweiteilung im Einstieg: links die kurze Botschaft und Aktionen, rechts eine sehr große Präsentationsansicht. Im weiteren Verlauf stehen Produktdemonstrationen und klar getrennte Funktionskarten im Fokus. Zurückhaltende Oberflächenfarben lassen die Inhalte der Präsentationen wirken.",
+      "imageRecipe": "Redaktionelle Präsentationsfläche zu [THEMA] mit wenigen sorgfältig platzierten Fotografien, feinen gepunkteten Verbindungslinien und großzügigem Weißraum. Bedienoberfläche, Beschriftungen und Diagrammwerte separat als echte Komponenten bauen.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Die öffentliche Desktopseite wurde im Einstieg und in weiteren Produktabschnitten visuell geprüft. Dieses Profil konzentriert sich auf Gestaltung und Informationshierarchie; konkrete Bewegungsabläufe sind noch nicht systematisch ausgewertet.",
+        "method": "manual-browser",
+        "effects": [],
+        "limitations": "Desktop-Stichprobe vom 17.09.2026. Keine vollständige Prüfung von Hover, Klickabläufen, Mobilansicht oder Performance. Eine statische Gesamtaufnahme dokumentiert keine verlässlichen Animationszeiten oder Scroll-Kopplungen."
+      },
+      "id": "community-21",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Resend",
+      "sourceUrl": "https://resend.com/",
+      "collection": "cinematic-still-life",
+      "family": "E-Mail-API · Cinematic Still Life",
+      "note": "Serifenschrift auf Schwarz, plastischer schwarzer Würfel, dezente Glanzkanten und hochwertige Integrationsdarstellung. Cinematic Still Life: Ein kontrolliert beleuchtetes Objekt und hochwertige Materialität prägen den ersten Eindruck.",
+      "vocabulary": [
+        "Serifenschrift",
+        "schwarzes Stillleben",
+        "metallische Glanzkanten",
+        "gedämpfte Lichtakzente",
+        "präzise Codeansichten"
+      ],
+      "heroUsage": "Große Serifenschlagzeile links und ein schwarzes räumliches Objekt rechts. Die Komposition wirkt wie eine hochwertige Produktaufnahme. Darunter werden Integrationen über kleine, konsistente Symbole und ein klar gegliedertes Codefenster erklärt.",
+      "imageRecipe": "Fotorealistisches abstraktes [TECHNISCHES OBJEKT] aus dunklem Metall und matten Segmenten, auf schwarzem Untergrund, präzises seitliches Streiflicht, feine Reflexe und viel Negativraum. Keine Schrift, Logos oder UI im Bild.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Die öffentliche Desktopseite wurde im Einstieg und in weiteren Produktabschnitten visuell geprüft. Dieses Profil konzentriert sich auf Gestaltung und Informationshierarchie; konkrete Bewegungsabläufe sind noch nicht systematisch ausgewertet.",
+        "method": "manual-browser",
+        "effects": [],
+        "limitations": "Desktop-Stichprobe vom 17.09.2026. Keine vollständige Prüfung von Hover, Klickabläufen, Mobilansicht oder Performance. Eine statische Gesamtaufnahme dokumentiert keine verlässlichen Animationszeiten oder Scroll-Kopplungen."
+      },
+      "id": "community-22",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Supabase",
+      "sourceUrl": "https://supabase.com/",
+      "collection": "technical-systems",
+      "family": "Backend und Datenbank · Technical Systems",
+      "note": "Helle neutrale Flächen, grüne Funktionsakzente, verständliche Modulkarten und Dashboard-Darstellung mit Registerreitern. Technical Systems: Die Seite strukturiert ein komplexes System in verständliche funktionale Bausteine.",
+      "vocabulary": [
+        "helle neutrale Flächen",
+        "grüne Akzente",
+        "Modulkarten",
+        "dünne Konturen",
+        "Dashboard-Register"
+      ],
+      "heroUsage": "Kurze zweigeteilte Nutzenbotschaft über einem Raster der technischen Bausteine. Grüne Akzente markieren die wichtigste Aussage und primäre Aktionen. Weiter unten veranschaulichen Registerreiter und große Dashboard-Ansichten die Arbeit im Produkt.",
+      "imageRecipe": "Technisches Diagramm zu [SYSTEM] auf hellem neutralem Grund mit feinen grauen Linien und einem gezielten grünen Akzent. Datenbank- und Authentifizierungsbereiche als klare Module zeichnen. Code, Daten und Navigation separat als lesbare echte UI anlegen.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Die öffentliche Desktopseite wurde im Einstieg und in weiteren Produktabschnitten visuell geprüft. Dieses Profil konzentriert sich auf Gestaltung und Informationshierarchie; konkrete Bewegungsabläufe sind noch nicht systematisch ausgewertet.",
+        "method": "manual-browser",
+        "effects": [],
+        "limitations": "Desktop-Stichprobe vom 17.09.2026. Keine vollständige Prüfung von Hover, Klickabläufen, Mobilansicht oder Performance. Eine statische Gesamtaufnahme dokumentiert keine verlässlichen Animationszeiten oder Scroll-Kopplungen."
+      },
+      "id": "community-23",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Vercel",
+      "sourceUrl": "https://vercel.com/",
+      "collection": "technical-systems",
+      "family": "Cloud-Infrastruktur · Technical Systems",
+      "note": "Sehr reduziertes Schwarz-Weiß, plastisches geometrisches Markenzeichen und großformatige Produktbeispiele. Technical Systems: Reduktion, klare Systemaussagen und konkrete Anwendungsbeispiele tragen die technische Positionierung.",
+      "vocabulary": [
+        "Schwarz-Weiß",
+        "geometrisches Markenzeichen",
+        "weicher Objektschatten",
+        "große Freiflächen",
+        "reduzierte Produktbühne"
+      ],
+      "heroUsage": "Breite, stark reduzierte Einleitung mit Text links, einem zentralen geometrischen Objekt und knappen Aussagen rechts. Nachfolgende großformatige Beispiele demonstrieren Anwendungen. Kontrast und Abstände ersetzen weitgehend dekorative Farbe.",
+      "imageRecipe": "Einfaches geometrisches [OBJEKT] als schwarze, plastische Form vor hellem Hintergrund mit weichem Bodenschatten. Präzise Kanten, reduzierte Materialität und großzügiger Freiraum. Keine Logos oder Schrift einbauen.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Die öffentliche Desktopseite wurde im Einstieg und in weiteren Produktabschnitten visuell geprüft. Dieses Profil konzentriert sich auf Gestaltung und Informationshierarchie; konkrete Bewegungsabläufe sind noch nicht systematisch ausgewertet.",
+        "method": "manual-browser",
+        "effects": [],
+        "limitations": "Desktop-Stichprobe vom 17.09.2026. Keine vollständige Prüfung von Hover, Klickabläufen, Mobilansicht oder Performance. Eine statische Gesamtaufnahme dokumentiert keine verlässlichen Animationszeiten oder Scroll-Kopplungen."
+      },
+      "id": "community-24",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Railway",
+      "sourceUrl": "https://railway.com/",
+      "collection": "illustrated-storybook",
+      "family": "Cloud-Hosting · Illustrated Storybook",
+      "note": "Illustrierter Nachthimmel, violette Akzente und Serifentitel, kombiniert mit technischen Produktansichten. Illustrated Storybook: Die erzählerische Illustration verleiht einem Infrastrukturprodukt eine eigene, freundlichere Welt.",
+      "vocabulary": [
+        "illustrierter Nachthimmel",
+        "Violett",
+        "Serifentitel",
+        "dunkle Produktfenster",
+        "atmosphärische Landschaft"
+      ],
+      "heroUsage": "Eine große gerahmte Nachthimmel-Illustration trägt die zentrale Botschaft und die Hauptaktionen. Eine Produktansicht schließt direkt an. Weitere Bereiche verbinden technische Inhalte mit der zurückhaltenden illustrierten Atmosphäre.",
+      "imageRecipe": "Illustration einer ruhigen nächtlichen [LANDSCHAFT] mit kleinen Sternen, stilisierten Wolken und einer begrenzten Palette aus Dunkelblau, Violett und gedämpftem Grün. Sanfte Textur, klare große Formen, Platz für separat gesetzten Text.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Die öffentliche Desktopseite wurde im Einstieg und in weiteren Produktabschnitten visuell geprüft. Dieses Profil konzentriert sich auf Gestaltung und Informationshierarchie; konkrete Bewegungsabläufe sind noch nicht systematisch ausgewertet.",
+        "method": "manual-browser",
+        "effects": [],
+        "limitations": "Desktop-Stichprobe vom 17.09.2026. Keine vollständige Prüfung von Hover, Klickabläufen, Mobilansicht oder Performance. Eine statische Gesamtaufnahme dokumentiert keine verlässlichen Animationszeiten oder Scroll-Kopplungen."
+      },
+      "id": "community-25",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Turso",
+      "sourceUrl": "https://turso.tech/",
+      "collection": "technical-systems",
+      "family": "Datenbankplattform · Technical Systems",
+      "note": "Dunkler Grund mit Mint, Codefenster im Einstieg und klare Architekturdiagramme samt nummerierten Funktionskarten. Technical Systems: Architektur und konkrete Implementierungsbeispiele stehen im Mittelpunkt der visuellen Erklärung.",
+      "vocabulary": [
+        "Mint auf Anthrazit",
+        "Codefenster",
+        "Architekturdiagramme",
+        "nummerierte Karten",
+        "kräftige serifenlose Schrift"
+      ],
+      "heroUsage": "Links eine große Nutzenbotschaft, rechts ein konkretes Codebeispiel. Es folgen Architekturdiagramme und nummerierte Karten mit kurzen Erklärungen. Der Mintton verbindet Hauptaussage, Handlungsaufforderungen und kleine Diagrammakzente.",
+      "imageRecipe": "Klares Architekturdiagramm von [SYSTEM] mit modularen Datenbankkästen auf sehr dunklem Grund, dünnen Konturen und sparsamen mintfarbenen Verbindungen. Beschriftungen und Code separat als echte, lesbare Elemente setzen.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Die öffentliche Desktopseite wurde im Einstieg und in weiteren Produktabschnitten visuell geprüft. Dieses Profil konzentriert sich auf Gestaltung und Informationshierarchie; konkrete Bewegungsabläufe sind noch nicht systematisch ausgewertet.",
+        "method": "manual-browser",
+        "effects": [],
+        "limitations": "Desktop-Stichprobe vom 17.09.2026. Keine vollständige Prüfung von Hover, Klickabläufen, Mobilansicht oder Performance. Eine statische Gesamtaufnahme dokumentiert keine verlässlichen Animationszeiten oder Scroll-Kopplungen."
+      },
+      "id": "community-26",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Sentry",
+      "sourceUrl": "https://sentry.io/",
+      "collection": "luminous-futurism",
+      "family": "Software-Monitoring · Luminous Futurism",
+      "note": "Violett, Pink und körnige Texturen; expressive Überschriften und gezeichnete technische Oberflächen. Luminous Futurism: Leuchtende Akzente und eine expressive digitale Bildwelt prägen die Gestaltung.",
+      "vocabulary": [
+        "Violett",
+        "Pink",
+        "körnige Texturen",
+        "expressive Typografie",
+        "illustrierte Softwaremodule"
+      ],
+      "heroUsage": "Eine breite zentrale Schlagzeile setzt ein einzelnes Wort farblich und durch einen versetzten Satz hervor. Dunkelviolette Flächen und Texturen bilden die Bühne für Produktillustrationen und Funktionskarten. Wiederkehrende Pinkakzente halten die expressive Gestaltung zusammen.",
+      "imageRecipe": "Stilisierte Illustration von [SOFTWAREPROBLEM] in einer dunkelvioletten digitalen Umgebung, pinke und vereinzelte gelbgrüne Akzente, feine Körnung und klare gezeichnete Formen. Keine echten Fehlermeldungen, Markenlogos oder unleserlichen Text ins Bild generieren.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Die öffentliche Desktopseite wurde im Einstieg und in weiteren Produktabschnitten visuell geprüft. Dieses Profil konzentriert sich auf Gestaltung und Informationshierarchie; konkrete Bewegungsabläufe sind noch nicht systematisch ausgewertet.",
+        "method": "manual-browser",
+        "effects": [],
+        "limitations": "Desktop-Stichprobe vom 17.09.2026. Keine vollständige Prüfung von Hover, Klickabläufen, Mobilansicht oder Performance. Eine statische Gesamtaufnahme dokumentiert keine verlässlichen Animationszeiten oder Scroll-Kopplungen."
+      },
+      "id": "community-27",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Mercury",
+      "sourceUrl": "https://mercury.com/",
+      "collection": "vast-quiet-cinematic",
+      "family": "Business-Fintech · Vast Quiet Cinematic",
+      "note": "Schreibtisch in weiter Landschaft, zurückhaltende Bedienelemente und anschließende dunkle Finanzoberfläche. Vast Quiet Cinematic: Landschaft, Distanz und ruhige Bildführung erzeugen die Wertigkeit des Einstiegs.",
+      "vocabulary": [
+        "weite Landschaft",
+        "filmisches Tageslicht",
+        "ruhige Navigation",
+        "blauviolette Akzente",
+        "dunkles Finanzdashboard"
+      ],
+      "heroUsage": "Eine bildfüllende Landschaft mit einem Arbeitsplatz im Vordergrund bildet die Bühne für die zentrale Botschaft. Ein kompakter Einstieg zur Kontoeröffnung liegt darüber. Im weiteren Verlauf wechselt die Seite zur konkreten Finanzoberfläche und verbindet Atmosphäre mit produktbezogenen Informationen.",
+      "imageRecipe": "Filmische Weitwinkelaufnahme eines einzelnen [ARBEITSPLATZES] in einer weitläufigen grünen Landschaft mit Morgennebel, weichem Licht und großer räumlicher Tiefe. Ruhigen Bereich für Text lassen, keine Beschriftungen oder Bildschirminhalte generieren.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Die öffentliche Desktopseite wurde im Einstieg und in weiteren Produktabschnitten visuell geprüft. Dieses Profil konzentriert sich auf Gestaltung und Informationshierarchie; konkrete Bewegungsabläufe sind noch nicht systematisch ausgewertet.",
+        "method": "manual-browser",
+        "effects": [],
+        "limitations": "Desktop-Stichprobe vom 17.09.2026. Keine vollständige Prüfung von Hover, Klickabläufen, Mobilansicht oder Performance. Eine statische Gesamtaufnahme dokumentiert keine verlässlichen Animationszeiten oder Scroll-Kopplungen."
+      },
+      "id": "community-28",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Ramp",
+      "sourceUrl": "https://ramp.com/",
+      "collection": "product-led-minimalism",
+      "family": "Ausgabenmanagement · Product-Led Minimalism",
+      "note": "Heller Grund, Schwarz und leuchtendes Gelbgrün, Punktmuster, Kennzahlen und klar geordnete Funktionskarten. Product-Led Minimalism: Klarer Nutzen, eindeutige Aktionen und strukturierte Produktmodule bestimmen die Seite.",
+      "vocabulary": [
+        "Weißraum",
+        "Gelbgrün",
+        "schwarze Typografie",
+        "Punktmuster",
+        "Kennzahlen"
+      ],
+      "heroUsage": "Eine linksbündige Nutzenbotschaft mit direkt darunterliegender Eingabe steht auf einem hellen Punktmuster. Zahlen und Kundenbeispiele führen in die Produktbereiche. Großzügige Funktionskarten ordnen das breite Angebot; Gelbgrün markiert wichtige Aktionen.",
+      "imageRecipe": "Helle technische Produktillustration zu [FINANZABLAUF] auf gebrochenem Weiß, feines Punktmuster, schwarze klare Konturen und wenige gelbgrüne Akzente. Finanzzahlen und Oberflächen separat mit konsistenten Beispieldaten gestalten.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Die öffentliche Desktopseite wurde im Einstieg und in weiteren Produktabschnitten visuell geprüft. Dieses Profil konzentriert sich auf Gestaltung und Informationshierarchie; konkrete Bewegungsabläufe sind noch nicht systematisch ausgewertet.",
+        "method": "manual-browser",
+        "effects": [],
+        "limitations": "Desktop-Stichprobe vom 17.09.2026. Keine vollständige Prüfung von Hover, Klickabläufen, Mobilansicht oder Performance. Eine statische Gesamtaufnahme dokumentiert keine verlässlichen Animationszeiten oder Scroll-Kopplungen."
+      },
+      "id": "community-29",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Stripe",
+      "sourceUrl": "https://stripe.com/",
+      "collection": "luminous-futurism",
+      "family": "Zahlungsinfrastruktur · Luminous Futurism",
+      "note": "Große Farbverläufe, feine Raster, plastische Zahlungsobjekte und modular gegliederte Produktkarten. Luminous Futurism: Licht, farbige räumliche Oberflächen und abstrakte digitale Produktbilder verbinden die Module.",
+      "vocabulary": [
+        "violette Akzente",
+        "Farbverläufe",
+        "feines Raster",
+        "plastische Zahlungsobjekte",
+        "modulare Produktkarten"
+      ],
+      "heroUsage": "Breiter Textblock vor einer großen diagonalen Farbfläche. Anschließend werden Produkte in einem präzisen Raster mit jeweils eigener Visualisierung präsentiert. Wiederkehrende Abstände, Konturen und Akzentfarben halten das umfangreiche Angebot zusammen.",
+      "imageRecipe": "Plastische abstrakte [ZAHLUNGSOBJEKTE] mit weichen Verläufen aus Violett, Rosa und warmem Orange auf hellem Grund. Saubere Kanten, dezente Schatten und klare räumliche Staffelung. Beschriftungen, Kartendaten und UI separat als echte Elemente umsetzen.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Die öffentliche Desktopseite wurde im Einstieg und in weiteren Produktabschnitten visuell geprüft. Dieses Profil konzentriert sich auf Gestaltung und Informationshierarchie; konkrete Bewegungsabläufe sind noch nicht systematisch ausgewertet.",
+        "method": "manual-browser",
+        "effects": [],
+        "limitations": "Desktop-Stichprobe vom 17.09.2026. Keine vollständige Prüfung von Hover, Klickabläufen, Mobilansicht oder Performance. Eine statische Gesamtaufnahme dokumentiert keine verlässlichen Animationszeiten oder Scroll-Kopplungen."
+      },
+      "id": "community-30",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Mollie",
+      "sourceUrl": "https://www.mollie.com/",
+      "collection": "product-led-minimalism",
+      "family": "Zahlungsplattform · Product-Led Minimalism",
+      "note": "Warme neutrale Farben, großzügige schwarze Typografie, reale Handelsszenen und gut gegliederte Produktkacheln. Product-Led Minimalism: Verständliche Anwendungsfälle und klar gegliederte Produkte bleiben der Schwerpunkt trotz warmer Bildwelt.",
+      "vocabulary": [
+        "warme Neutralfarben",
+        "große serifenlose Typografie",
+        "reale Handelsszenen",
+        "helle Kacheln",
+        "ruhige Produktfotografie"
+      ],
+      "heroUsage": "Zentrierte große Nutzenbotschaft mit zwei klaren Aktionen. Darunter vermittelt eine breite Handelsszene den Anwendungskontext. Ein übersichtliches Funktionsraster führt zu großen Produktkacheln mit Zahlungsarten und Geräten.",
+      "imageRecipe": "Authentische Fotografie von [HANDELSSITUATION] in weichem Tageslicht, natürliche Materialien, warme neutrale Farben und ein klar erkennbares Zahlungsgerät ohne Markenlogo. Produktbeschriftungen und Bestätigungen separat als UI darüberlegen.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Die öffentliche Desktopseite wurde im Einstieg und in weiteren Produktabschnitten visuell geprüft. Dieses Profil konzentriert sich auf Gestaltung und Informationshierarchie; konkrete Bewegungsabläufe sind noch nicht systematisch ausgewertet.",
+        "method": "manual-browser",
+        "effects": [],
+        "limitations": "Desktop-Stichprobe vom 17.09.2026. Keine vollständige Prüfung von Hover, Klickabläufen, Mobilansicht oder Performance. Eine statische Gesamtaufnahme dokumentiert keine verlässlichen Animationszeiten oder Scroll-Kopplungen."
+      },
+      "id": "community-31",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Increase",
+      "sourceUrl": "https://increase.com/",
+      "collection": "technical-systems",
+      "family": "Banking-Infrastruktur · Technical Systems",
+      "note": "Blaugrüne geometrische Körper auf Weiß, technische Codeansichten und präzise Karten- und Kontovisualisierungen. Technical Systems: Die Verbindung von Banking-Funktionen, Code und Systemdarstellungen prägt die Einordnung.",
+      "vocabulary": [
+        "weißer Grund",
+        "blaugrüne Geometrie",
+        "präzise Codeansichten",
+        "Kontodiagramme",
+        "feine Linien"
+      ],
+      "heroUsage": "Eine kurze technische Positionierung links wird von großen geometrischen Körpern rechts und darunter begleitet. Weitere Module zeigen konkrete Bankfunktionen über Code, Karten und Kontodarstellungen. Ein konsistentes Raster verbindet die unterschiedlichen Formate.",
+      "imageRecipe": "Abstrakte geometrische [KÖRPER] mit klaren Flächen in Blau, Türkis und hellem Grün auf Weiß. Aufsteigende Größenstaffelung und viel Freiraum. Finanzdiagramme und Beschriftungen anschließend mit echten Komponenten gestalten.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Die öffentliche Desktopseite wurde im Einstieg und in weiteren Produktabschnitten visuell geprüft. Dieses Profil konzentriert sich auf Gestaltung und Informationshierarchie; konkrete Bewegungsabläufe sind noch nicht systematisch ausgewertet.",
+        "method": "manual-browser",
+        "effects": [],
+        "limitations": "Desktop-Stichprobe vom 17.09.2026. Keine vollständige Prüfung von Hover, Klickabläufen, Mobilansicht oder Performance. Eine statische Gesamtaufnahme dokumentiert keine verlässlichen Animationszeiten oder Scroll-Kopplungen."
+      },
+      "id": "community-32",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Wealthsimple",
+      "sourceUrl": "https://www.wealthsimple.com/",
+      "collection": "warm-product-editorial",
+      "family": "Investieren und Banking · Warm Product Editorial",
+      "note": "Große Fotografie, elegante Serifenschrift in weiteren Abschnitten, cremefarbene Flächen und großzügige App-Darstellung. Einstieg aktuell kampagnenbezogen. Warm Product Editorial: Redaktionelle Typografie, warme Flächen und Fotografie rahmen die digitale Finanzanwendung.",
+      "vocabulary": [
+        "große Fotografie",
+        "elegante Serifenschrift",
+        "Cremeweiß",
+        "abgerundete Navigation",
+        "große App-Ansichten"
+      ],
+      "heroUsage": "Der geprüfte Einstieg ist kampagnenbezogen und verwendet eine großflächige Fotografie mit darüberliegender Botschaft. Weitere Abschnitte wechseln zwischen großer Serifentypografie, ruhigen hellen Flächen und großzügig inszenierten App-Ansichten. Die redaktionelle Bildsprache bildet den roten Faden.",
+      "imageRecipe": "Hochwertige redaktionelle Fotografie von [LEBENSSITUATION ODER ARCHITEKTUR] mit natürlichem Licht, zurückhaltenden Farben und sorgfältiger Komposition. Große ruhige Flächen lassen; App-Ansichten und Finanzwerte separat als UI gestalten.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Die öffentliche Desktopseite wurde im Einstieg und in weiteren Produktabschnitten visuell geprüft. Dieses Profil konzentriert sich auf Gestaltung und Informationshierarchie; konkrete Bewegungsabläufe sind noch nicht systematisch ausgewertet.",
+        "method": "manual-browser",
+        "effects": [],
+        "limitations": "Desktop-Stichprobe vom 17.09.2026. Keine vollständige Prüfung von Hover, Klickabläufen, Mobilansicht oder Performance. Eine statische Gesamtaufnahme dokumentiert keine verlässlichen Animationszeiten oder Scroll-Kopplungen."
+      },
+      "id": "community-33",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    },
+    {
+      "title": "Polar",
+      "sourceUrl": "https://polar.sh/",
+      "collection": "product-led-minimalism",
+      "family": "SaaS-Abrechnung · Product-Led Minimalism",
+      "note": "Konsequent schwarzer Grund, große reduzierte Typografie und kleine präzise Beispiele für Abrechnung, Marge und Auszahlung. Product-Led Minimalism: Wenige präzise Produktbeispiele vermitteln den Ablauf ohne dekorative Überladung.",
+      "vocabulary": [
+        "Schwarz",
+        "abgestufte Grautöne",
+        "große reduzierte Typografie",
+        "kleine Abrechnungsbeispiele",
+        "weiße Aktionen"
+      ],
+      "heroUsage": "Große linksbündige Einleitung auf schwarzem Grund mit einer klaren Hauptaktion. Darunter erklären kleine präzise Oberflächenbeispiele die Schritte von Nutzung und Abonnement bis zur Auszahlung. Der zurückhaltende Rahmen lenkt die Aufmerksamkeit auf die wesentlichen Daten.",
+      "imageRecipe": "Minimalistische digitale Produktkomposition zu [ABRECHNUNGSABLAUF] auf Schwarz, wenige dunkelgraue Karten, feine Konturen und gezielte weiße Hervorhebungen. Zahlen, Bezeichnungen und Diagramme als echte UI mit konsistenten Beispieldaten umsetzen.",
+      "screenshotKind": "full-page",
+      "motion": {
+        "summary": "Die öffentliche Desktopseite wurde im Einstieg und in weiteren Produktabschnitten visuell geprüft. Dieses Profil konzentriert sich auf Gestaltung und Informationshierarchie; konkrete Bewegungsabläufe sind noch nicht systematisch ausgewertet.",
+        "method": "manual-browser",
+        "effects": [],
+        "limitations": "Desktop-Stichprobe vom 17.09.2026. Keine vollständige Prüfung von Hover, Klickabläufen, Mobilansicht oder Performance. Eine statische Gesamtaufnahme dokumentiert keine verlässlichen Animationszeiten oder Scroll-Kopplungen."
+      },
+      "id": "community-34",
+      "file": "capture-pending.svg",
+      "added": "2026-09-17",
+      "captureNote": "Designprofil und Original-Link sind enthalten. Erstelle die eigene Aufnahme über „Website aufnehmen“ oder lade einen Screenshot hoch."
+    }
+  ]
+}

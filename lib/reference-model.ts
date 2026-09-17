@@ -1,0 +1,7 @@
+import {motionSchema} from './motion';
+import {z} from 'zod';
+export const sourceUrlSchema=z.string().trim().max(2048).refine(value=>{if(!value)return true;try{const u=new URL(value);return ['http:','https:'].includes(u.protocol)&&!u.username&&!u.password;}catch{return false;}},'Bitte einen gültigen http- oder https-Link ohne Zugangsdaten eingeben.');
+export const collectionSchema=z.object({name:z.string().trim().min(1).max(100),description:z.string().trim().min(1).max(2000),deployFor:z.string().max(1000),vocabulary:z.array(z.string().min(1).max(160)).max(20),risk:z.string().max(2000),accent:z.string().regex(/^#[0-9a-f]{6}$/i),imageStyle:z.string().max(5000)});
+export const referenceFields=z.object({title:z.string().trim().min(1).max(120),collection:z.string().min(1).max(120),family:z.string().max(250),note:z.string().max(5000),vocabulary:z.array(z.string().trim().min(1).max(160)).max(30),imageRecipe:z.string().max(5000),heroUsage:z.string().max(5000),sourceUrl:sourceUrlSchema,screenshotKind:z.enum(['section','full-page']),motion:motionSchema.optional(),newCollection:collectionSchema.nullable().optional()});
+export const analysisSchema=z.object({title:z.string().min(1).max(120),family:z.string().min(1).max(250),note:z.string().min(1).max(5000),vocabulary:z.array(z.string().min(1).max(160)).min(1).max(20),imageRecipe:z.string().max(5000),heroUsage:z.string().min(1).max(5000),collection:z.string().max(120),collectionReason:z.string().max(1500),newCollection:collectionSchema.nullable()});
+export type Analysis=z.infer<typeof analysisSchema>;

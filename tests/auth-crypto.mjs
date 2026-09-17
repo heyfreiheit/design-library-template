@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import {randomBytes} from 'node:crypto';
+import {hashPassword,verifyPassword,newToken,tokenHash,encryptSecret,decryptSecret} from '../lib/auth-crypto.mjs';
+const password='Eine-lange-Passphrase!';
+const one=await hashPassword(password),two=await hashPassword(password);
+assert.notEqual(one,two);assert(await verifyPassword(password,one));assert(!await verifyPassword('falsch',one));assert(!await verifyPassword(password,'invalid'));
+const token=newToken();assert.match(token,/^[A-Za-z0-9_-]{43}$/);assert.equal(tokenHash(token).length,64);assert.notEqual(tokenHash(token),tokenHash(newToken()));
+process.env.VAULT_ENCRYPTION_KEY=randomBytes(32).toString('base64');const secret='sk-test-only-do-not-send';const encrypted=encryptSecret(secret);
+assert(!encrypted.includes(secret));assert.equal(decryptSecret(encrypted),secret);assert.notEqual(encrypted,encryptSecret(secret));
+const parts=encrypted.split('.');parts[3]=Buffer.from('tampered').toString('base64');assert.throws(()=>decryptSecret(parts.join('.')));
+process.env.VAULT_ENCRYPTION_KEY=randomBytes(32).toString('base64');assert.throws(()=>decryptSecret(encrypted));delete process.env.VAULT_ENCRYPTION_KEY;assert.throws(()=>encryptSecret(secret));
+console.log('PASS: salted password hashes, incorrect password rejection, random session tokens, authenticated secret encryption and tamper detection.');

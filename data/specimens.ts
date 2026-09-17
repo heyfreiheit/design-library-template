@@ -1,0 +1,20 @@
+export const SPECIMENS = {
+  "editorial-minimalism": `<div class="t">Aufgaben im Blick. Gemeinsam ans Ziel.</div><div class="s">Schnell, per Tastatur und angenehm unaufdringlich.</div><span class="b">Jetzt loslegen</span>`,
+  "warm-editorial": `<div class="t">Software wie ein gutes Buch.</div><div class="s">Mit Zeit und Bedacht gestaltet.</div><span class="b">Jetzt lesen</span>`,
+  "terminal-core": `<div class="t">$ vaultctl deploy --edge</div><div class="s">→ gebaut in 412 ms · 0 Warnungen</div><div class="s">→ aktiv in 14 Regionen <span class="cur"></span></div>`,
+  "swiss-international": `<div class="t">Form folgt<br><span class="red">Funktion.</span></div><div class="rule"></div>`,
+  "brutalist-raw": `<div class="t">VERZEICHNIS /PROJEKTE</div><div class="s">Lädt in 40 ms. Bleibt länger als dein Framework.<br><a href="#">projekte.html</a> · <a href="#">aktuell.html</a></div>`,
+  "neo-brutalism": `<div class="t">Zeig Haltung.</div><div class="card-n">Schatten mit Kante.</div>`,
+  "neon-brutalist": `<span class="tag">Rezension</span><div class="t">Das Album des Jahres <em>ist eine Tabelle.</em></div>`,
+  "data-dense-pro": `<div class="lbl">Anfragen</div><div class="val">184,2 Tsd. <span class="up">▲2,4 %</span></div><div class="lbl" style="margin-top:8px">p99</div><div class="val">218 ms</div>`,
+  "cinematic-dark": `<div class="o">Ein neuer Antrieb</div><div class="t">Erschaffe Realität.</div>`,
+  "glass-soft-futurism": `<div class="g"><div class="t">Spürbar leicht.</div><div class="s">Eine Oberfläche wie Architektur aus Milchglas.</div></div>`,
+  "playful-color": `<span class="bl b1"></span><span class="bl b2"></span><div class="t">Lernen wie <em>Spielen.</em></div><span class="b">Starte deine Lernserie</span>`,
+  "magazine-print": `<div class="mh">Das Journal</div><div class="cols"><p>Wer eine Oberfläche wie eine Zeitung gestaltet, übernimmt auch ihre Glaubwürdigkeit. Spalten vermitteln redaktionelle Sorgfalt; ein Zeitungskopf steht für eine vertrauenswürdige Institution.</p></div>`,
+  "y2k-retro-futurism": `<div class="t">ZUKUNFTSFEST</div><div class="s">seit 1999 · Band 2</div><div class="horizon"></div>`,
+  "japanese-minimalism": `<span class="dot"></span><div class="t">間<br>weniger, gut platziert</div>`,
+  "quiet-luxury": `<div class="o">Rezeptur Nr. 4</div><div class="t">PETERSILIENSAMEN</div><div class="rule"></div>`,
+  "tactile-skeuomorph": `<div class="knob"></div><div class="t">PEGEL <b>−12dB</b><br>op-1 Gerätehandbuch</div>`,
+  "immersive-3d": `<div class="orb"></div><div class="t">Betritt die Welt</div><div class="scroll">zum Starten scrollen ↓</div>`,
+  "bento-grid": `<div class="cell hero">Ein Produkt,<br>erzählt in Kacheln<span class="num">▤</span></div><div class="cell">Abgleich<span class="num">40 ms</span></div><div class="cell">Teams<span class="num">12 Tsd.</span></div><div class="cell">Verfügbarkeit<span class="num">99,99 %</span></div><div class="cell">Regionen<span class="num">14</span></div>`
+};

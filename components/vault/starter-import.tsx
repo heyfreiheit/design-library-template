@@ -1,0 +1,7 @@
+ 'use client';
+import {useState,useRef} from 'react';
+import seed from '@/data/gallery.json';
+export function StarterImport(){const[busy,setBusy]=useState(false),[lines,setLines]=useState<string[]>([]);const stopped=useRef(false);
+ async function run(){stopped.current=false;setBusy(true);setLines([]);for(const entry of seed.entries){if(stopped.current)break;setLines(v=>[...v,entry.title+' …']);try{const r=await fetch('/api/capture-reference',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id:entry.id,onlyMissing:true})});const d=await r.json();if(!r.ok)throw Error(d.error);setLines(v=>[...v.slice(0,-1),entry.title+(d.skipped?' · bereits vorhanden':' · gespeichert')]);}catch(e){setLines(v=>[...v.slice(0,-1),entry.title+' · '+(e as Error).message]);}}setBusy(false);}
+ return <section><h3>34 Startreferenzen</h3><p>Profile, Links und Einordnungen sind bereits enthalten. Erstelle jetzt eigene Screenshots über Browserless. Bestehende Bilder bleiben erhalten; fehlgeschlagene Aufnahmen kannst du später erneut versuchen.</p><p>Das verbraucht dein Browserless-Kontingent. Lass diese Seite geöffnet, bis die Aufnahmen fertig sind.</p><button className="secondary-btn" disabled={busy} onClick={run}>{busy?'Aufnahmen laufen …':'Fehlende Screenshots erstellen'}</button>{busy&&<button className="text-btn" onClick={()=>{stopped.current=true;}}>Nach aktueller Aufnahme stoppen</button>}<div role="log" style={{maxHeight:320,overflow:'auto'}}>{lines.map((s,i)=><p key={i}>{s}</p>)}</div></section>;
+}

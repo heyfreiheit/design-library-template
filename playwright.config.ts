@@ -1,0 +1,2 @@
+import {defineConfig} from '@playwright/test';
+export default defineConfig({testDir:'./tests/browser',workers:1,timeout:60000,webServer:{command:'node scripts/test-server.mjs',url:'http://127.0.0.1:3187/setup',reuseExistingServer:false,timeout:120000},use:{baseURL:'http://127.0.0.1:3187',headless:true,launchOptions:{...(process.env.TEST_BROWSER_PATH?{executablePath:process.env.TEST_BROWSER_PATH}:{})}},reporter:'list'});
