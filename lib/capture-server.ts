@@ -20,7 +20,8 @@ async function dismissCookies(page:Page){
 }
 async function openPage(url:string,motion:boolean){const c=await analysisConfig();if(!c.browserKey)throw Error('Bitte Browserless unter Einstellungen verbinden oder einen Screenshot hochladen.');
  const host=['production-ams.browserless.io','production-lon.browserless.io','production-sfo.browserless.io'].includes(c.browserRegion)?c.browserRegion:'production-ams.browserless.io';
- const endpoint=new URL('wss://'+host+(motion?'':'/chromium'));endpoint.searchParams.set('token',c.browserKey);endpoint.searchParams.set('timeout','150000');if(motion){endpoint.searchParams.set('headless','false');endpoint.searchParams.set('stealth','true');endpoint.searchParams.set('record','true');}
+ // Stay below the two-minute Browserless plan limit, including shared-fleet connections.
+ const endpoint=new URL('wss://'+host+(motion?'':'/chromium'));endpoint.searchParams.set('token',c.browserKey);endpoint.searchParams.set('timeout','110000');if(motion){endpoint.searchParams.set('headless','false');endpoint.searchParams.set('stealth','true');endpoint.searchParams.set('record','true');}
  const browser=await puppeteer.connect({browserWSEndpoint:endpoint.href,protocolTimeout:45000});
  try{const page=await browser.newPage();await page.setViewport({width:1440,height:1000,deviceScaleFactor:1});await page.setRequestInterception(true);
  // The remote provider supplies browser isolation and blocks private/metadata addresses.

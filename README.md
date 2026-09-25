@@ -88,6 +88,8 @@ Die Anwendung ist keine Zusage für dauerhaft kostenlosen Betrieb. Vercel, Neon,
 
 Die Library benötigt keinen ständig laufenden Chromium-Prozess auf Vercel. Browserless führt die Website-Aufnahmen isoliert außerhalb deiner Anwendung aus. Geschützte Seiten, CAPTCHAs, unendliches Scrollen und einzelne Cookie-Dialoge können automatische Aufnahmen verhindern. In solchen Fällen einen eigenen Screenshot hochladen. Aufnahmen sind auf 60.000 Pixel Seitenhöhe begrenzt und werden als JPEG bis 3 MB komprimiert. Scroll-Clips sind Desktop-Stichproben, keine vollständige Interaktionsprüfung.
 
+Der Browserless-Timeout in der Verbindungs-URL beträgt für Screenshots und Scroll-Clips 110.000 ms. Ältere Kopien verwenden 150.000 ms, was bei Konten mit einem Zwei-Minuten-Limit bereits beim Verbindungsaufbau abgelehnt werden kann. Aktualisiere in diesem Fall deine Kopie: in `lib/capture-server.ts` den `timeout`-Wert auf `110000` setzen, Tests ausführen und neu deployen. Änderungen am Template werden nicht automatisch in bestehende Kopien übernommen. Die kürzere Sitzungsdauer ersetzt keine nötige Recording-Berechtigung und garantiert keine Aufnahme jeder Website.
+
 Dauerhafter Cloud-Speicher bedeutet: Daten bleiben über Browserwechsel und App-Deployments erhalten. Er ersetzt kein Backup. Sichere Datenbank, Blob-Dateien und den Verschlüsselungsschlüssel; lösche beim Redeploy keine verbundenen Speicher.
 
 ## Lokal entwickeln

@@ -8,6 +8,25 @@ for(const e of seed.entries){referenceFields.parse(e);assert(seed.collections.so
 const {publicWebsite}=loadModule('lib/capture-server.ts',{'./analysis-server':{analysisConfig:async()=>({})}});
 for(const url of ['http://localhost/','http://127.0.0.1/','http://169.254.169.254/','http://[::1]/','file:///etc/passwd','https://user:pass@example.org/','https://example.org:3000/','https://service.internal/'])assert.throws(()=>publicWebsite(url));
 assert.equal(publicWebsite('https://linear.app/'),'https://linear.app/');
+// Exercise both capture entry points against a provider with a two-minute plan limit.
+for(const motion of [false,true]){
+ let connected=false,closed=false;
+ const stop=new Error('Stop after accepted connection');
+ const capture=loadModule('lib/capture-server.ts',{
+  './analysis-server':{analysisConfig:async()=>({browserKey:'test-only',browserRegion:'production-ams.browserless.io'})},
+  'puppeteer-core':{connect:async({browserWSEndpoint})=>{
+   const endpoint=new URL(browserWSEndpoint);
+   const timeout=Number(endpoint.searchParams.get('timeout'));
+   if(!(timeout>0&&timeout<=120000))throw new Error('Provider rejected session timeout');
+   assert.equal(endpoint.pathname,motion?'/':'/chromium');
+   assert.equal(endpoint.searchParams.get('record'),motion?'true':null);
+   connected=true;
+   return {newPage:async()=>{throw stop;},close:async()=>{closed=true;}};
+  }}
+ });
+ await assert.rejects((motion?capture.captureMotion:capture.captureWebsite)('https://fixture.example/'),error=>error===stop);
+ assert(connected);assert(closed);
+}
 const {analyzeJson,providerModels}=loadModule('lib/ai-provider.ts');
 const originalFetch=globalThis.fetch;
 const result={title:'Test',family:'Minimal',note:'Kontrast',vocabulary:['Weißraum'],imageRecipe:'',heroUsage:'Große Überschrift',collection:seed.collections[0].id,collectionReason:'Passende Typografie',newCollection:null};
